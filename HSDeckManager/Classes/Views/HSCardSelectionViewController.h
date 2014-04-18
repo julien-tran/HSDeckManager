@@ -1,5 +1,5 @@
 //
-//  HSDeckListViewController.h
+//  HSCardSelectionViewController.h
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSDeckListViewController : UIViewController
+@interface HSCardSelectionViewController : UIViewController
 
 @end

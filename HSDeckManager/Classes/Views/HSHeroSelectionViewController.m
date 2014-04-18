@@ -1,18 +1,22 @@
 //
-//  HSDeckListViewController.m
+//  HSHeroSelectionViewController.m
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
-#import "HSDeckListViewController.h"
+#import "HSHeroSelectionViewController.h"
 
-@interface HSDeckListViewController ()
+// Data
+#import "HSDeck.h"
+#import "HSDataCenter.h"
+
+@interface HSHeroSelectionViewController ()
 
 @end
 
-@implementation HSDeckListViewController
+@implementation HSHeroSelectionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,5 +49,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)heroButtonDidSelect:(UIButton*)heroButton
+{
+    HSDeck *newDeck = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSDeck class]) inManagedObjectContext:mainDataCenter.managedObjectContext];
+    newDeck.lastDate = [NSDate date];
+    newDeck.name = @"New deck";
+}
 
 @end

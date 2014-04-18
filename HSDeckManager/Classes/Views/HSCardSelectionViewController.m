@@ -1,18 +1,18 @@
 //
-//  HSMainViewController.m
+//  HSCardSelectionViewController.m
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
-#import "HSMainViewController.h"
+#import "HSCardSelectionViewController.h"
 
-@interface HSMainViewController ()
+@interface HSCardSelectionViewController ()
 
 @end
 
-@implementation HSMainViewController
+@implementation HSCardSelectionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

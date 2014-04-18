@@ -1,5 +1,5 @@
 //
-//  HSMainViewController.h
+//  HSDeckStatsViewController.h
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSMainViewController : UIViewController
+@interface HSDeckStatsViewController : UIViewController
 
 @end

@@ -1,18 +1,18 @@
 //
-//  HSHeroSelectionViewController.m
+//  HSDeckContentViewController.m
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
-#import "HSHeroSelectionViewController.h"
+#import "HSDeckContentViewController.h"
 
-@interface HSHeroSelectionViewController ()
+@interface HSDeckContentViewController ()
 
 @end
 
-@implementation HSHeroSelectionViewController
+@implementation HSDeckContentViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,10 +45,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)heroButtonDidSelect:(UIButton*)heroButton
-{
-    
-}
 
 @end
