@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A9027B6E-22B9-4F5C-A51D-9EA43BD6118F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HSDeckManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CDB71B8-7323-4C7D-AEE7-8A1B7D70A5B3</key>
+		<string>https://github.com/julien-tran/HSDeckManager.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HSDeckManager.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CDB71B8-7323-4C7D-AEE7-8A1B7D70A5B3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/julien-tran/HSDeckManager.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CDB71B8-7323-4C7D-AEE7-8A1B7D70A5B3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CDB71B8-7323-4C7D-AEE7-8A1B7D70A5B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HSDeckManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>
