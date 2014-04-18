@@ -20,6 +20,8 @@
 		F9E184901901362E00BEC2AC /* HSDeckManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E1848F1901362E00BEC2AC /* HSDeckManagerTests.m */; };
 		F9E184A01901369400BEC2AC /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E1849B1901369400BEC2AC /* HSAppDelegate.m */; };
 		F9E184A41901370000BEC2AC /* HSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184A31901370000BEC2AC /* HSMainViewController.m */; };
+		F9E184A81901381200BEC2AC /* HSDeckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184A71901381200BEC2AC /* HSDeckListViewController.m */; };
+		F9E184AB19014F7100BEC2AC /* HSHeroSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184AA19014F7100BEC2AC /* HSHeroSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F9E1849B1901369400BEC2AC /* HSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSAppDelegate.m; sourceTree = "<group>"; };
 		F9E184A21901370000BEC2AC /* HSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMainViewController.h; sourceTree = "<group>"; };
 		F9E184A31901370000BEC2AC /* HSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMainViewController.m; sourceTree = "<group>"; };
+		F9E184A61901381200BEC2AC /* HSDeckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckListViewController.h; sourceTree = "<group>"; };
+		F9E184A71901381200BEC2AC /* HSDeckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckListViewController.m; sourceTree = "<group>"; };
+		F9E184A919014F7100BEC2AC /* HSHeroSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHeroSelectionViewController.h; sourceTree = "<group>"; };
+		F9E184AA19014F7100BEC2AC /* HSHeroSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHeroSelectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,10 @@
 				F9E1849B1901369400BEC2AC /* HSAppDelegate.m */,
 				F9E184A21901370000BEC2AC /* HSMainViewController.h */,
 				F9E184A31901370000BEC2AC /* HSMainViewController.m */,
+				F9E184A61901381200BEC2AC /* HSDeckListViewController.h */,
+				F9E184A71901381200BEC2AC /* HSDeckListViewController.m */,
+				F9E184A919014F7100BEC2AC /* HSHeroSelectionViewController.h */,
+				F9E184AA19014F7100BEC2AC /* HSHeroSelectionViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -272,6 +282,8 @@
 			files = (
 				F9E184A41901370000BEC2AC /* HSMainViewController.m in Sources */,
 				F9E184711901362E00BEC2AC /* main.m in Sources */,
+				F9E184A81901381200BEC2AC /* HSDeckListViewController.m in Sources */,
+				F9E184AB19014F7100BEC2AC /* HSHeroSelectionViewController.m in Sources */,
 				F9E184A01901369400BEC2AC /* HSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
