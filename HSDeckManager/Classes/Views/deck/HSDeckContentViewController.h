@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSDeckContentViewController : UIViewController <NSFetchedResultsControllerDelegate>
+@class HSDeck;
 
+@interface HSDeckContentViewController : UIViewController <NSFetchedResultsControllerDelegate>
+@property (nonatomic, strong) HSDeck *deck;
 @end

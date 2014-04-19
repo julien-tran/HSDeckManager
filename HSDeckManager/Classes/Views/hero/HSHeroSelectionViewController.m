@@ -13,7 +13,7 @@
 #import "HSDataCenter.h"
 
 @interface HSHeroSelectionViewController ()
-
+@property (nonatomic, strong) HSDeck *selectedDeck;
 @end
 
 @implementation HSHeroSelectionViewController
@@ -39,22 +39,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)heroButtonDidSelect:(UIButton*)heroButton
 {
     HSDeck *newDeck = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSDeck class]) inManagedObjectContext:mainDataCenter.managedObjectContext];
     newDeck.lastDate = [NSDate date];
     newDeck.name = @"New deck";
+    
+    self.selectedDeck = newDeck;
+    
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"heroSelectionSegue"])
+    {
+        UITabBarController *tabController = segue.destinationViewController;
+        for (UIViewController *viewController in tabController.viewControllers)
+        {
+            if ([viewController respondsToSelector:@selector(setDeck:)])
+            {
+                [viewController performSelector:@selector(setDeck:) withObject:self.selectedDeck afterDelay:0];
+            }
+        }
+    }
 }
 
 @end

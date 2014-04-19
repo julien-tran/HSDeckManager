@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSCardSelectionViewController : UIViewController
+@class HSDeck;
 
+@interface HSCardSelectionViewController : UIViewController
+@property (nonatomic, strong) HSDeck *deck;
 @end

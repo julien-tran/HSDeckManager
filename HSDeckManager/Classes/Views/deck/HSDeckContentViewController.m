@@ -11,6 +11,7 @@
 #import "HSCardCell.h"
 #import "HSCard.h"
 #import "HSDataCenter.h"
+#import "HSDeck.h"
 
 @interface HSDeckContentViewController ()
 @property (nonatomic, weak) IBOutlet UITableView    *cardTableView;
@@ -62,6 +63,8 @@
 		[fetchRequest setEntity:[NSEntityDescription entityForName:NSStringFromClass([HSCard class])
 											inManagedObjectContext:mainDataCenter.managedObjectContext]];
 		
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"parentDeck = %@", self.deck]];
+        
         NSSortDescriptor *manaSort = [[NSSortDescriptor alloc] initWithKey:@"cardInfo.manaCost" ascending:YES];
         NSSortDescriptor *nameSort = [[NSSortDescriptor alloc] initWithKey:@"cardInfo.name" ascending:YES];
 		NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:manaSort, nameSort, nil];

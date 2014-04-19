@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSCardSearchViewController : UIViewController
+@class HSDeck;
 
+@interface HSCardSearchViewController : UIViewController
+@property (nonatomic, strong) HSDeck *deck;
 @end

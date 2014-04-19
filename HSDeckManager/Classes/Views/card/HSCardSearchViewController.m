@@ -15,6 +15,8 @@
 // Data
 #import "HSDataCenter.h"
 #import "HSCardInfo.h"
+#import "HSDeck.h"
+#import "HSCard.h"
 
 @interface HSCardSearchViewController ()
 @property (nonatomic, weak) IBOutlet iCarousel      *cardCarousel;
@@ -103,6 +105,13 @@
     // If it is the centered page, we select the card
     if (carousel.currentItemIndex == index)
     {
+        HSCardInfo *selectedCardInfo = self.matchedResults[carousel.currentItemIndex];
+        
+        HSCard *newCard = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSCard class]) inManagedObjectContext:mainDataCenter.managedObjectContext];
+        newCard.cardInfo = selectedCardInfo;
+        [self.deck addCardsObject:newCard];
+        
+        [self doneButtonDidClick:nil];
     }
 }
 
