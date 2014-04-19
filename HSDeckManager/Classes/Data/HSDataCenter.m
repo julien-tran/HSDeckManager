@@ -7,6 +7,15 @@
 //
 
 #import "HSDataCenter.h"
+#import "HSCardInfo.h"
+
+typedef enum
+{
+    hsCardTypeMinion    = 1,
+    hsCardTypeSpell     = 2,
+    hsCardTypeWeapon    = 3,
+    hsCardTypeSecret    = 4
+} hsCardType;
 
 @implementation HSDataCenter
 
@@ -33,6 +42,7 @@
 {
     if (self = [super init])
     {
+        [self loadCardInfo];
     }
     return self;
 }
@@ -132,10 +142,36 @@
 #pragma mark - Query
 - (void)loadCardInfo
 {
+    BOOL alreadyLoadInfo = [[NSUserDefaults standardUserDefaults] boolForKey:@"hsCardInfoDidLoad"];
+    if (alreadyLoadInfo)
+        return;
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"card_data" ofType:@"data"];
     NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     NSArray *lines = [fileContent componentsSeparatedByString:@"\n"];
-//    for (int )
+    for (NSString *line in lines)
+    {
+        NSArray *components = [line componentsSeparatedByString:@"|"];
+        if (5 != components.count)
+            continue;
+        
+        HSCardInfo *info = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSCardInfo class]) inManagedObjectContext:self.managedObjectContext];
+        int cardType = [components[0] intValue];
+        info.isMinion   = @(hsCardTypeMinion == cardType);
+        info.isWeapon   = @(hsCardTypeWeapon == cardType);
+        info.isSecret   = @(hsCardTypeSecret == cardType);
+        info.isSpell    = @(hsCardTypeSpell == cardType);
+        
+        info.name               = components[1];
+        info.manaCost           = @([components[2] intValue]);
+        info.attack             = @([components[3] intValue]);
+        info.healthDurability   = @([components[4] intValue]);
+    }
+    
+    [self saveContext];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hsCardInfoDidLoad"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

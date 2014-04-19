@@ -21,6 +21,22 @@
 		F9376C061902D08000FFE097 /* HSDeckStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BFB1902D08000FFE097 /* HSDeckStatsViewController.m */; };
 		F9376C071902D08000FFE097 /* HSHeroSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BFE1902D08000FFE097 /* HSHeroSelectionViewController.m */; };
 		F9376C0A1902D34100FFE097 /* HSCardSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376C091902D34100FFE097 /* HSCardSearchViewController.m */; };
+		F9376C101902D62300FFE097 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376C0F1902D62300FFE097 /* iCarousel.m */; };
+		F9376C141902D7CE00FFE097 /* HSCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376C121902D7CE00FFE097 /* HSCardViewController.m */; };
+		F9376C171902D90500FFE097 /* HSCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9376C161902D90500FFE097 /* HSCardViewController.xib */; };
+		F9376C1C1902D91A00FFE097 /* cardframe_minion.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C191902D91A00FFE097 /* cardframe_minion.png */; };
+		F9376C1D1902D91A00FFE097 /* cardframe_spell.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C1A1902D91A00FFE097 /* cardframe_spell.png */; };
+		F9376C1E1902D91A00FFE097 /* cardframe_weapon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C1B1902D91A00FFE097 /* cardframe_weapon.png */; };
+		F9376C291902DD8A00FFE097 /* Abomination.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C1F1902DD8A00FFE097 /* Abomination.png */; };
+		F9376C2A1902DD8A00FFE097 /* AbusiveSergeant.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C201902DD8A00FFE097 /* AbusiveSergeant.png */; };
+		F9376C2B1902DD8A00FFE097 /* AcidicSwampOoze.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C211902DD8A00FFE097 /* AcidicSwampOoze.png */; };
+		F9376C2C1902DD8A00FFE097 /* AcolyteOfPain.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C221902DD8A00FFE097 /* AcolyteOfPain.png */; };
+		F9376C2D1902DD8A00FFE097 /* AlarmOBot.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C231902DD8A00FFE097 /* AlarmOBot.png */; };
+		F9376C2E1902DD8A00FFE097 /* Alextraza.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C241902DD8A00FFE097 /* Alextraza.png */; };
+		F9376C2F1902DD8A00FFE097 /* AmaniBerserker.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C251902DD8A00FFE097 /* AmaniBerserker.png */; };
+		F9376C301902DD8A00FFE097 /* AncientBrewmaster.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C261902DD8A00FFE097 /* AncientBrewmaster.png */; };
+		F9376C311902DD8A00FFE097 /* BaineBloodhoof.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C271902DD8A00FFE097 /* BaineBloodhoof.png */; };
+		F9376C321902DD8A00FFE097 /* BigGameHunter.png in Resources */ = {isa = PBXBuildFile; fileRef = F9376C281902DD8A00FFE097 /* BigGameHunter.png */; };
 		F9E184711901362E00BEC2AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184701901362E00BEC2AC /* main.m */; };
 		F9E184781901362E00BEC2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E184761901362E00BEC2AC /* Main.storyboard */; };
 		F9E1847D1901362E00BEC2AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E1847C1901362E00BEC2AC /* Images.xcassets */; };
@@ -80,6 +96,24 @@
 		F9376BFE1902D08000FFE097 /* HSHeroSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHeroSelectionViewController.m; sourceTree = "<group>"; };
 		F9376C081902D34000FFE097 /* HSCardSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardSearchViewController.h; sourceTree = "<group>"; };
 		F9376C091902D34100FFE097 /* HSCardSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardSearchViewController.m; sourceTree = "<group>"; };
+		F9376C0E1902D62300FFE097 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		F9376C0F1902D62300FFE097 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		F9376C111902D7CE00FFE097 /* HSCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardViewController.h; sourceTree = "<group>"; };
+		F9376C121902D7CE00FFE097 /* HSCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardViewController.m; sourceTree = "<group>"; };
+		F9376C161902D90500FFE097 /* HSCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCardViewController.xib; sourceTree = "<group>"; };
+		F9376C191902D91A00FFE097 /* cardframe_minion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_minion.png; sourceTree = "<group>"; };
+		F9376C1A1902D91A00FFE097 /* cardframe_spell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_spell.png; sourceTree = "<group>"; };
+		F9376C1B1902D91A00FFE097 /* cardframe_weapon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_weapon.png; sourceTree = "<group>"; };
+		F9376C1F1902DD8A00FFE097 /* Abomination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abomination.png; sourceTree = "<group>"; };
+		F9376C201902DD8A00FFE097 /* AbusiveSergeant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AbusiveSergeant.png; sourceTree = "<group>"; };
+		F9376C211902DD8A00FFE097 /* AcidicSwampOoze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AcidicSwampOoze.png; sourceTree = "<group>"; };
+		F9376C221902DD8A00FFE097 /* AcolyteOfPain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AcolyteOfPain.png; sourceTree = "<group>"; };
+		F9376C231902DD8A00FFE097 /* AlarmOBot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlarmOBot.png; sourceTree = "<group>"; };
+		F9376C241902DD8A00FFE097 /* Alextraza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alextraza.png; sourceTree = "<group>"; };
+		F9376C251902DD8A00FFE097 /* AmaniBerserker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmaniBerserker.png; sourceTree = "<group>"; };
+		F9376C261902DD8A00FFE097 /* AncientBrewmaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AncientBrewmaster.png; sourceTree = "<group>"; };
+		F9376C271902DD8A00FFE097 /* BaineBloodhoof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaineBloodhoof.png; sourceTree = "<group>"; };
+		F9376C281902DD8A00FFE097 /* BigGameHunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigGameHunter.png; sourceTree = "<group>"; };
 		F9E184611901362E00BEC2AC /* HSDeckManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSDeckManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E1846C1901362E00BEC2AC /* HSDeckManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HSDeckManager-Info.plist"; sourceTree = "<group>"; };
 		F9E184701901362E00BEC2AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,10 +168,13 @@
 				F9376BED1902D08000FFE097 /* HSCardCell.h */,
 				F9376BEE1902D08000FFE097 /* HSCardCell.m */,
 				F9376BEF1902D08000FFE097 /* HSCardCell.xib */,
-				F9376BF01902D08000FFE097 /* HSCardSelectionViewController.h */,
-				F9376BF11902D08000FFE097 /* HSCardSelectionViewController.m */,
 				F9376C081902D34000FFE097 /* HSCardSearchViewController.h */,
 				F9376C091902D34100FFE097 /* HSCardSearchViewController.m */,
+				F9376BF01902D08000FFE097 /* HSCardSelectionViewController.h */,
+				F9376BF11902D08000FFE097 /* HSCardSelectionViewController.m */,
+				F9376C111902D7CE00FFE097 /* HSCardViewController.h */,
+				F9376C121902D7CE00FFE097 /* HSCardViewController.m */,
+				F9376C161902D90500FFE097 /* HSCardViewController.xib */,
 			);
 			path = card;
 			sourceTree = "<group>";
@@ -165,6 +202,40 @@
 				F9376BFE1902D08000FFE097 /* HSHeroSelectionViewController.m */,
 			);
 			path = hero;
+			sourceTree = "<group>";
+		};
+		F9376C0B1902D62300FFE097 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F9376C0C1902D62300FFE097 /* UI_Components */ = {
+			isa = PBXGroup;
+			children = (
+				F9376C0D1902D62300FFE097 /* iCarousel */,
+			);
+			path = UI_Components;
+			sourceTree = "<group>";
+		};
+		F9376C0D1902D62300FFE097 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F9376C0E1902D62300FFE097 /* iCarousel.h */,
+				F9376C0F1902D62300FFE097 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		F9376C181902D91A00FFE097 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F9376C191902D91A00FFE097 /* cardframe_minion.png */,
+				F9376C1A1902D91A00FFE097 /* cardframe_spell.png */,
+				F9376C1B1902D91A00FFE097 /* cardframe_weapon.png */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F9E184581901362E00BEC2AC = {
@@ -240,6 +311,7 @@
 		F9E1849E1901369400BEC2AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F9376C181902D91A00FFE097 /* Common */,
 				F9E184E11901548800BEC2AC /* Data */,
 				F9E184AC1901521B00BEC2AC /* Heroes */,
 				F9E1849F1901369400BEC2AC /* Cards */,
@@ -250,6 +322,16 @@
 		F9E1849F1901369400BEC2AC /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				F9376C1F1902DD8A00FFE097 /* Abomination.png */,
+				F9376C201902DD8A00FFE097 /* AbusiveSergeant.png */,
+				F9376C211902DD8A00FFE097 /* AcidicSwampOoze.png */,
+				F9376C221902DD8A00FFE097 /* AcolyteOfPain.png */,
+				F9376C231902DD8A00FFE097 /* AlarmOBot.png */,
+				F9376C241902DD8A00FFE097 /* Alextraza.png */,
+				F9376C251902DD8A00FFE097 /* AmaniBerserker.png */,
+				F9376C261902DD8A00FFE097 /* AncientBrewmaster.png */,
+				F9376C271902DD8A00FFE097 /* BaineBloodhoof.png */,
+				F9376C281902DD8A00FFE097 /* BigGameHunter.png */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -319,6 +401,8 @@
 		F9E184E61901571400BEC2AC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F9376C0B1902D62300FFE097 /* Categories */,
+				F9376C0C1902D62300FFE097 /* UI_Components */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -402,9 +486,15 @@
 			files = (
 				F9E184C01901521B00BEC2AC /* hero_banner_rogue.jpg in Resources */,
 				F9376BEB1902CDA800FFE097 /* card_data.data in Resources */,
+				F9376C2C1902DD8A00FFE097 /* AcolyteOfPain.png in Resources */,
 				F9E184BB1901521B00BEC2AC /* hero_banner_druid.jpg in Resources */,
+				F9376C2D1902DD8A00FFE097 /* AlarmOBot.png in Resources */,
+				F9376C291902DD8A00FFE097 /* Abomination.png in Resources */,
+				F9376C321902DD8A00FFE097 /* BigGameHunter.png in Resources */,
 				F9376C001902D08000FFE097 /* HSCardCell.xib in Resources */,
 				F9E184C31901521B00BEC2AC /* hero_banner_warrior.jpg in Resources */,
+				F9376C2A1902DD8A00FFE097 /* AbusiveSergeant.png in Resources */,
+				F9376C2F1902DD8A00FFE097 /* AmaniBerserker.png in Resources */,
 				F9E184BC1901521B00BEC2AC /* hero_banner_hunter.jpg in Resources */,
 				F9E184C11901521B00BEC2AC /* hero_banner_shaman.jpg in Resources */,
 				F9E184BD1901521B00BEC2AC /* hero_banner_mage.jpg in Resources */,
@@ -413,11 +503,19 @@
 				F9E184BF1901521B00BEC2AC /* hero_banner_priest.jpg in Resources */,
 				F9E1847D1901362E00BEC2AC /* Images.xcassets in Resources */,
 				F9E184C51901521B00BEC2AC /* hero_avatar_hunter.png in Resources */,
+				F9376C1C1902D91A00FFE097 /* cardframe_minion.png in Resources */,
 				F9E184C61901521B00BEC2AC /* hero_avatar_mage.png in Resources */,
+				F9376C311902DD8A00FFE097 /* BaineBloodhoof.png in Resources */,
+				F9376C1D1902D91A00FFE097 /* cardframe_spell.png in Resources */,
+				F9376C171902D90500FFE097 /* HSCardViewController.xib in Resources */,
+				F9376C301902DD8A00FFE097 /* AncientBrewmaster.png in Resources */,
 				F9E184781901362E00BEC2AC /* Main.storyboard in Resources */,
 				F9E184C21901521B00BEC2AC /* hero_banner_warlock.jpg in Resources */,
 				F9E184C41901521B00BEC2AC /* hero_avatar_druid.png in Resources */,
+				F9376C2E1902DD8A00FFE097 /* Alextraza.png in Resources */,
 				F9376C031902D08000FFE097 /* HSDeckCell.xib in Resources */,
+				F9376C1E1902D91A00FFE097 /* cardframe_weapon.png in Resources */,
+				F9376C2B1902DD8A00FFE097 /* AcidicSwampOoze.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,8 +547,10 @@
 				F9376BCC1902C5A700FFE097 /* HSDeck.m in Sources */,
 				F9E184A01901369400BEC2AC /* HSAppDelegate.m in Sources */,
 				F9376C051902D08000FFE097 /* HSDeckListViewController.m in Sources */,
+				F9376C101902D62300FFE097 /* iCarousel.m in Sources */,
 				F9E184E41901549600BEC2AC /* HSDeckManagerData.xcdatamodeld in Sources */,
 				F9376C061902D08000FFE097 /* HSDeckStatsViewController.m in Sources */,
+				F9376C141902D7CE00FFE097 /* HSCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
