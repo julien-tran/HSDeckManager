@@ -2,30 +2,32 @@
 //  HSCard.m
 //  HSDeckManager
 //
-//  Created by Julien Tran on 18/04/14.
+//  Created by Julien Tran on 19/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
 #import "HSCard.h"
-#import "HSDeck.h"
+#import "HSCard.h"
 
 
 @implementation HSCard
 
-@dynamic manaCost;
-@dynamic isTaunt;
-@dynamic isDivine;
-@dynamic isMinion;
-@dynamic isWeapon;
-@dynamic isSpell;
-@dynamic isSecret;
 @dynamic canDrawCard;
-@dynamic isAoE;
-@dynamic isRemoval;
+@dynamic canHeal;
 @dynamic canSilence;
 @dynamic hasBattlecry;
-@dynamic canHeal;
 @dynamic hasCharge;
-@dynamic parentDeck;
+@dynamic isAoE;
+@dynamic isDivine;
+@dynamic isMinion;
+@dynamic isRemoval;
+@dynamic isSecret;
+@dynamic isSpell;
+@dynamic isTaunt;
+@dynamic isWeapon;
+@dynamic manaCost;
+@dynamic attack;
+@dynamic healthDurability;
+@dynamic cards;
 
 @end

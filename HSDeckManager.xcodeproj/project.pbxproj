@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9376BCC1902C5A700FFE097 /* HSDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BCB1902C5A700FFE097 /* HSDeck.m */; };
+		F9376BD21902C5A800FFE097 /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BD11902C5A800FFE097 /* HSCard.m */; };
 		F9E184711901362E00BEC2AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184701901362E00BEC2AC /* main.m */; };
 		F9E184781901362E00BEC2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E184761901362E00BEC2AC /* Main.storyboard */; };
 		F9E1847D1901362E00BEC2AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E1847C1901362E00BEC2AC /* Images.xcassets */; };
@@ -32,8 +34,6 @@
 		F9E184DD1901544100BEC2AC /* HSDeckContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184DC1901544100BEC2AC /* HSDeckContentViewController.m */; };
 		F9E184E01901546200BEC2AC /* HSCardSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184DF1901546200BEC2AC /* HSCardSelectionViewController.m */; };
 		F9E184E41901549600BEC2AC /* HSDeckManagerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9E184E21901549600BEC2AC /* HSDeckManagerData.xcdatamodeld */; };
-		F9E184E91901572400BEC2AC /* HSDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184E81901572400BEC2AC /* HSDeck.m */; };
-		F9E184EC1901572600BEC2AC /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184EB1901572600BEC2AC /* HSCard.m */; };
 		F9E184EF1901574800BEC2AC /* HSDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184EE1901574800BEC2AC /* HSDataCenter.m */; };
 		F9E184F31901654800BEC2AC /* HSDeckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184F11901654800BEC2AC /* HSDeckCell.m */; };
 		F9E184F41901654800BEC2AC /* HSDeckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E184F21901654800BEC2AC /* HSDeckCell.xib */; };
@@ -50,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F9376BCA1902C5A700FFE097 /* HSDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeck.h; sourceTree = "<group>"; };
+		F9376BCB1902C5A700FFE097 /* HSDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeck.m; sourceTree = "<group>"; };
+		F9376BD01902C5A800FFE097 /* HSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCard.h; sourceTree = "<group>"; };
+		F9376BD11902C5A800FFE097 /* HSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCard.m; sourceTree = "<group>"; };
 		F9E184611901362E00BEC2AC /* HSDeckManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSDeckManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E1846C1901362E00BEC2AC /* HSDeckManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HSDeckManager-Info.plist"; sourceTree = "<group>"; };
 		F9E184701901362E00BEC2AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,10 +90,6 @@
 		F9E184DE1901546200BEC2AC /* HSCardSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardSelectionViewController.h; sourceTree = "<group>"; };
 		F9E184DF1901546200BEC2AC /* HSCardSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardSelectionViewController.m; sourceTree = "<group>"; };
 		F9E184E31901549600BEC2AC /* HSDeckManagerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HSDeckManagerData.xcdatamodel; sourceTree = "<group>"; };
-		F9E184E71901572400BEC2AC /* HSDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeck.h; sourceTree = "<group>"; };
-		F9E184E81901572400BEC2AC /* HSDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeck.m; sourceTree = "<group>"; };
-		F9E184EA1901572600BEC2AC /* HSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCard.h; sourceTree = "<group>"; };
-		F9E184EB1901572600BEC2AC /* HSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCard.m; sourceTree = "<group>"; };
 		F9E184ED1901574800BEC2AC /* HSDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDataCenter.h; sourceTree = "<group>"; };
 		F9E184EE1901574800BEC2AC /* HSDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDataCenter.m; sourceTree = "<group>"; };
 		F9E184F01901654800BEC2AC /* HSDeckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckCell.h; sourceTree = "<group>"; };
@@ -261,12 +261,12 @@
 		F9E184E51901571400BEC2AC /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				F9E184EA1901572600BEC2AC /* HSCard.h */,
-				F9E184EB1901572600BEC2AC /* HSCard.m */,
-				F9E184E71901572400BEC2AC /* HSDeck.h */,
-				F9E184E81901572400BEC2AC /* HSDeck.m */,
 				F9E184ED1901574800BEC2AC /* HSDataCenter.h */,
+				F9376BD01902C5A800FFE097 /* HSCard.h */,
+				F9376BD11902C5A800FFE097 /* HSCard.m */,
 				F9E184EE1901574800BEC2AC /* HSDataCenter.m */,
+				F9376BCA1902C5A700FFE097 /* HSDeck.h */,
+				F9376BCB1902C5A700FFE097 /* HSDeck.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -389,16 +389,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E184EC1901572600BEC2AC /* HSCard.m in Sources */,
 				F9E184F31901654800BEC2AC /* HSDeckCell.m in Sources */,
 				F9E184711901362E00BEC2AC /* main.m in Sources */,
 				F9E184D51901540300BEC2AC /* HSDeckListViewController.m in Sources */,
 				F9E184EF1901574800BEC2AC /* HSDataCenter.m in Sources */,
+				F9376BD21902C5A800FFE097 /* HSCard.m in Sources */,
+				F9376BCC1902C5A700FFE097 /* HSDeck.m in Sources */,
 				F9E184D61901540300BEC2AC /* HSHeroSelectionViewController.m in Sources */,
 				F9E184DD1901544100BEC2AC /* HSDeckContentViewController.m in Sources */,
 				F9E184A01901369400BEC2AC /* HSAppDelegate.m in Sources */,
 				F9E184E41901549600BEC2AC /* HSDeckManagerData.xcdatamodeld in Sources */,
-				F9E184E91901572400BEC2AC /* HSDeck.m in Sources */,
 				F9E184E01901546200BEC2AC /* HSCardSelectionViewController.m in Sources */,
 				F9E184DA1901541D00BEC2AC /* HSDeckStatsViewController.m in Sources */,
 			);

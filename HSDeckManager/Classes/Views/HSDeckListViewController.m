@@ -128,7 +128,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return self.deckFetchedController.fetchedObjects.count;
+    id  sectionInfo = [[self.deckFetchedController sections] objectAtIndex:section];
+    if ([sectionInfo respondsToSelector:@selector(numberOfObjects)])
+        return [sectionInfo numberOfObjects];
+    return 0;
 }
 
 /* Load and initialize the cell representing the artists from its nib file.

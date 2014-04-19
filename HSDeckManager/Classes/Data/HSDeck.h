@@ -2,7 +2,7 @@
 //  HSDeck.h
 //  HSDeckManager
 //
-//  Created by Julien Tran on 18/04/14.
+//  Created by Julien Tran on 19/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
