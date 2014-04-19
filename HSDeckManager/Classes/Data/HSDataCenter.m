@@ -129,4 +129,13 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
+#pragma mark - Query
+- (void)loadCardInfo
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"card_data" ofType:@"data"];
+    NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSArray *lines = [fileContent componentsSeparatedByString:@"\n"];
+//    for (int )
+}
+
 @end

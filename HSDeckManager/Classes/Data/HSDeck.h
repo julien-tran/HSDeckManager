@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class HSCard;
 
 @interface HSDeck : NSManagedObject
 
@@ -20,8 +21,8 @@
 
 @interface HSDeck (CoreDataGeneratedAccessors)
 
-- (void)addCardsObject:(NSManagedObject *)value;
-- (void)removeCardsObject:(NSManagedObject *)value;
+- (void)addCardsObject:(HSCard *)value;
+- (void)removeCardsObject:(HSCard *)value;
 - (void)addCards:(NSSet *)values;
 - (void)removeCards:(NSSet *)values;
 

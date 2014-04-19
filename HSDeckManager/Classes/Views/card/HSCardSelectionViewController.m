@@ -1,18 +1,18 @@
 //
-//  HSDeckContentViewController.m
+//  HSCardSelectionViewController.m
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
-#import "HSDeckContentViewController.h"
+#import "HSCardSelectionViewController.h"
 
-@interface HSDeckContentViewController ()
+@interface HSCardSelectionViewController ()
 
 @end
 
-@implementation HSDeckContentViewController
+@implementation HSCardSelectionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,5 +45,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)cardDidClick:(UIButton*)cardButton
+{
+    
+}
 
 @end

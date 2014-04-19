@@ -1,18 +1,18 @@
 //
-//  HSCardSelectionViewController.m
+//  HSCardSearchViewController.m
 //  HSDeckManager
 //
-//  Created by Julien Tran on 18/04/14.
+//  Created by Julien Tran on 19/04/14.
 //  Copyright (c) 2014 Julien Tran. All rights reserved.
 //
 
-#import "HSCardSelectionViewController.h"
+#import "HSCardSearchViewController.h"
 
-@interface HSCardSelectionViewController ()
+@interface HSCardSearchViewController ()
 
 @end
 
-@implementation HSCardSelectionViewController
+@implementation HSCardSearchViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,5 +45,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)doneButtonDidClick:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

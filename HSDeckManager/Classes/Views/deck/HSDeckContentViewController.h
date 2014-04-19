@@ -1,5 +1,5 @@
 //
-//  HSCardSelectionViewController.h
+//  HSDeckContentViewController.h
 //  HSDeckManager
 //
 //  Created by Julien Tran on 18/04/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSCardSelectionViewController : UIViewController
+@interface HSDeckContentViewController : UIViewController <NSFetchedResultsControllerDelegate>
 
 @end

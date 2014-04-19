@@ -8,7 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F9376BCC1902C5A700FFE097 /* HSDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BCB1902C5A700FFE097 /* HSDeck.m */; };
-		F9376BD21902C5A800FFE097 /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BD11902C5A800FFE097 /* HSCard.m */; };
+		F9376BE11902C66000FFE097 /* HSCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BE01902C66000FFE097 /* HSCardInfo.m */; };
+		F9376BE41902C68100FFE097 /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BE31902C68100FFE097 /* HSCard.m */; };
+		F9376BEB1902CDA800FFE097 /* card_data.data in Resources */ = {isa = PBXBuildFile; fileRef = F9376BEA1902CDA800FFE097 /* card_data.data */; };
+		F9376BFF1902D08000FFE097 /* HSCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BEE1902D08000FFE097 /* HSCardCell.m */; };
+		F9376C001902D08000FFE097 /* HSCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9376BEF1902D08000FFE097 /* HSCardCell.xib */; };
+		F9376C011902D08000FFE097 /* HSCardSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BF11902D08000FFE097 /* HSCardSelectionViewController.m */; };
+		F9376C021902D08000FFE097 /* HSDeckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BF41902D08000FFE097 /* HSDeckCell.m */; };
+		F9376C031902D08000FFE097 /* HSDeckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9376BF51902D08000FFE097 /* HSDeckCell.xib */; };
+		F9376C041902D08000FFE097 /* HSDeckContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BF71902D08000FFE097 /* HSDeckContentViewController.m */; };
+		F9376C051902D08000FFE097 /* HSDeckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BF91902D08000FFE097 /* HSDeckListViewController.m */; };
+		F9376C061902D08000FFE097 /* HSDeckStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BFB1902D08000FFE097 /* HSDeckStatsViewController.m */; };
+		F9376C071902D08000FFE097 /* HSHeroSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376BFE1902D08000FFE097 /* HSHeroSelectionViewController.m */; };
+		F9376C0A1902D34100FFE097 /* HSCardSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9376C091902D34100FFE097 /* HSCardSearchViewController.m */; };
 		F9E184711901362E00BEC2AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184701901362E00BEC2AC /* main.m */; };
 		F9E184781901362E00BEC2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E184761901362E00BEC2AC /* Main.storyboard */; };
 		F9E1847D1901362E00BEC2AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E1847C1901362E00BEC2AC /* Images.xcassets */; };
@@ -28,15 +40,8 @@
 		F9E184C51901521B00BEC2AC /* hero_avatar_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = F9E184B81901521B00BEC2AC /* hero_avatar_hunter.png */; };
 		F9E184C61901521B00BEC2AC /* hero_avatar_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = F9E184B91901521B00BEC2AC /* hero_avatar_mage.png */; };
 		F9E184C71901521B00BEC2AC /* hero_avatar_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = F9E184BA1901521B00BEC2AC /* hero_avatar_priest.png */; };
-		F9E184D51901540300BEC2AC /* HSDeckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184CF1901540300BEC2AC /* HSDeckListViewController.m */; };
-		F9E184D61901540300BEC2AC /* HSHeroSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184D11901540300BEC2AC /* HSHeroSelectionViewController.m */; };
-		F9E184DA1901541D00BEC2AC /* HSDeckStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184D91901541D00BEC2AC /* HSDeckStatsViewController.m */; };
-		F9E184DD1901544100BEC2AC /* HSDeckContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184DC1901544100BEC2AC /* HSDeckContentViewController.m */; };
-		F9E184E01901546200BEC2AC /* HSCardSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184DF1901546200BEC2AC /* HSCardSelectionViewController.m */; };
 		F9E184E41901549600BEC2AC /* HSDeckManagerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9E184E21901549600BEC2AC /* HSDeckManagerData.xcdatamodeld */; };
 		F9E184EF1901574800BEC2AC /* HSDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184EE1901574800BEC2AC /* HSDataCenter.m */; };
-		F9E184F31901654800BEC2AC /* HSDeckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E184F11901654800BEC2AC /* HSDeckCell.m */; };
-		F9E184F41901654800BEC2AC /* HSDeckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E184F21901654800BEC2AC /* HSDeckCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +57,29 @@
 /* Begin PBXFileReference section */
 		F9376BCA1902C5A700FFE097 /* HSDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeck.h; sourceTree = "<group>"; };
 		F9376BCB1902C5A700FFE097 /* HSDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeck.m; sourceTree = "<group>"; };
-		F9376BD01902C5A800FFE097 /* HSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCard.h; sourceTree = "<group>"; };
-		F9376BD11902C5A800FFE097 /* HSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCard.m; sourceTree = "<group>"; };
+		F9376BDF1902C66000FFE097 /* HSCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardInfo.h; sourceTree = "<group>"; };
+		F9376BE01902C66000FFE097 /* HSCardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardInfo.m; sourceTree = "<group>"; };
+		F9376BE21902C68100FFE097 /* HSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCard.h; sourceTree = "<group>"; };
+		F9376BE31902C68100FFE097 /* HSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCard.m; sourceTree = "<group>"; };
+		F9376BEA1902CDA800FFE097 /* card_data.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = card_data.data; sourceTree = "<group>"; };
+		F9376BED1902D08000FFE097 /* HSCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardCell.h; sourceTree = "<group>"; };
+		F9376BEE1902D08000FFE097 /* HSCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardCell.m; sourceTree = "<group>"; };
+		F9376BEF1902D08000FFE097 /* HSCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCardCell.xib; sourceTree = "<group>"; };
+		F9376BF01902D08000FFE097 /* HSCardSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardSelectionViewController.h; sourceTree = "<group>"; };
+		F9376BF11902D08000FFE097 /* HSCardSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardSelectionViewController.m; sourceTree = "<group>"; };
+		F9376BF31902D08000FFE097 /* HSDeckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckCell.h; sourceTree = "<group>"; };
+		F9376BF41902D08000FFE097 /* HSDeckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckCell.m; sourceTree = "<group>"; };
+		F9376BF51902D08000FFE097 /* HSDeckCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSDeckCell.xib; sourceTree = "<group>"; };
+		F9376BF61902D08000FFE097 /* HSDeckContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckContentViewController.h; sourceTree = "<group>"; };
+		F9376BF71902D08000FFE097 /* HSDeckContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckContentViewController.m; sourceTree = "<group>"; };
+		F9376BF81902D08000FFE097 /* HSDeckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckListViewController.h; sourceTree = "<group>"; };
+		F9376BF91902D08000FFE097 /* HSDeckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckListViewController.m; sourceTree = "<group>"; };
+		F9376BFA1902D08000FFE097 /* HSDeckStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckStatsViewController.h; sourceTree = "<group>"; };
+		F9376BFB1902D08000FFE097 /* HSDeckStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckStatsViewController.m; sourceTree = "<group>"; };
+		F9376BFD1902D08000FFE097 /* HSHeroSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHeroSelectionViewController.h; sourceTree = "<group>"; };
+		F9376BFE1902D08000FFE097 /* HSHeroSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHeroSelectionViewController.m; sourceTree = "<group>"; };
+		F9376C081902D34000FFE097 /* HSCardSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardSearchViewController.h; sourceTree = "<group>"; };
+		F9376C091902D34100FFE097 /* HSCardSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardSearchViewController.m; sourceTree = "<group>"; };
 		F9E184611901362E00BEC2AC /* HSDeckManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSDeckManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E1846C1901362E00BEC2AC /* HSDeckManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HSDeckManager-Info.plist"; sourceTree = "<group>"; };
 		F9E184701901362E00BEC2AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,22 +105,9 @@
 		F9E184B81901521B00BEC2AC /* hero_avatar_hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_hunter.png; sourceTree = "<group>"; };
 		F9E184B91901521B00BEC2AC /* hero_avatar_mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_mage.png; sourceTree = "<group>"; };
 		F9E184BA1901521B00BEC2AC /* hero_avatar_priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_priest.png; sourceTree = "<group>"; };
-		F9E184CE1901540300BEC2AC /* HSDeckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckListViewController.h; sourceTree = "<group>"; };
-		F9E184CF1901540300BEC2AC /* HSDeckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckListViewController.m; sourceTree = "<group>"; };
-		F9E184D01901540300BEC2AC /* HSHeroSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHeroSelectionViewController.h; sourceTree = "<group>"; };
-		F9E184D11901540300BEC2AC /* HSHeroSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHeroSelectionViewController.m; sourceTree = "<group>"; };
-		F9E184D81901541D00BEC2AC /* HSDeckStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckStatsViewController.h; sourceTree = "<group>"; };
-		F9E184D91901541D00BEC2AC /* HSDeckStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckStatsViewController.m; sourceTree = "<group>"; };
-		F9E184DB1901544100BEC2AC /* HSDeckContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckContentViewController.h; sourceTree = "<group>"; };
-		F9E184DC1901544100BEC2AC /* HSDeckContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckContentViewController.m; sourceTree = "<group>"; };
-		F9E184DE1901546200BEC2AC /* HSCardSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardSelectionViewController.h; sourceTree = "<group>"; };
-		F9E184DF1901546200BEC2AC /* HSCardSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardSelectionViewController.m; sourceTree = "<group>"; };
 		F9E184E31901549600BEC2AC /* HSDeckManagerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HSDeckManagerData.xcdatamodel; sourceTree = "<group>"; };
 		F9E184ED1901574800BEC2AC /* HSDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDataCenter.h; sourceTree = "<group>"; };
 		F9E184EE1901574800BEC2AC /* HSDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDataCenter.m; sourceTree = "<group>"; };
-		F9E184F01901654800BEC2AC /* HSDeckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDeckCell.h; sourceTree = "<group>"; };
-		F9E184F11901654800BEC2AC /* HSDeckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDeckCell.m; sourceTree = "<group>"; };
-		F9E184F21901654800BEC2AC /* HSDeckCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSDeckCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +128,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9376BEC1902D08000FFE097 /* card */ = {
+			isa = PBXGroup;
+			children = (
+				F9376BED1902D08000FFE097 /* HSCardCell.h */,
+				F9376BEE1902D08000FFE097 /* HSCardCell.m */,
+				F9376BEF1902D08000FFE097 /* HSCardCell.xib */,
+				F9376BF01902D08000FFE097 /* HSCardSelectionViewController.h */,
+				F9376BF11902D08000FFE097 /* HSCardSelectionViewController.m */,
+				F9376C081902D34000FFE097 /* HSCardSearchViewController.h */,
+				F9376C091902D34100FFE097 /* HSCardSearchViewController.m */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		F9376BF21902D08000FFE097 /* deck */ = {
+			isa = PBXGroup;
+			children = (
+				F9376BF31902D08000FFE097 /* HSDeckCell.h */,
+				F9376BF41902D08000FFE097 /* HSDeckCell.m */,
+				F9376BF51902D08000FFE097 /* HSDeckCell.xib */,
+				F9376BF61902D08000FFE097 /* HSDeckContentViewController.h */,
+				F9376BF71902D08000FFE097 /* HSDeckContentViewController.m */,
+				F9376BF81902D08000FFE097 /* HSDeckListViewController.h */,
+				F9376BF91902D08000FFE097 /* HSDeckListViewController.m */,
+				F9376BFA1902D08000FFE097 /* HSDeckStatsViewController.h */,
+				F9376BFB1902D08000FFE097 /* HSDeckStatsViewController.m */,
+			);
+			path = deck;
+			sourceTree = "<group>";
+		};
+		F9376BFC1902D08000FFE097 /* hero */ = {
+			isa = PBXGroup;
+			children = (
+				F9376BFD1902D08000FFE097 /* HSHeroSelectionViewController.h */,
+				F9376BFE1902D08000FFE097 /* HSHeroSelectionViewController.m */,
+			);
+			path = hero;
+			sourceTree = "<group>";
+		};
 		F9E184581901362E00BEC2AC = {
 			isa = PBXGroup;
 			children = (
@@ -233,19 +285,9 @@
 		F9E184CB1901540300BEC2AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F9E184CE1901540300BEC2AC /* HSDeckListViewController.h */,
-				F9E184CF1901540300BEC2AC /* HSDeckListViewController.m */,
-				F9E184D01901540300BEC2AC /* HSHeroSelectionViewController.h */,
-				F9E184D11901540300BEC2AC /* HSHeroSelectionViewController.m */,
-				F9E184D81901541D00BEC2AC /* HSDeckStatsViewController.h */,
-				F9E184D91901541D00BEC2AC /* HSDeckStatsViewController.m */,
-				F9E184DB1901544100BEC2AC /* HSDeckContentViewController.h */,
-				F9E184DC1901544100BEC2AC /* HSDeckContentViewController.m */,
-				F9E184DE1901546200BEC2AC /* HSCardSelectionViewController.h */,
-				F9E184DF1901546200BEC2AC /* HSCardSelectionViewController.m */,
-				F9E184F01901654800BEC2AC /* HSDeckCell.h */,
-				F9E184F11901654800BEC2AC /* HSDeckCell.m */,
-				F9E184F21901654800BEC2AC /* HSDeckCell.xib */,
+				F9376BEC1902D08000FFE097 /* card */,
+				F9376BF21902D08000FFE097 /* deck */,
+				F9376BFC1902D08000FFE097 /* hero */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				F9E184E21901549600BEC2AC /* HSDeckManagerData.xcdatamodeld */,
+				F9376BEA1902CDA800FFE097 /* card_data.data */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -262,11 +305,13 @@
 			isa = PBXGroup;
 			children = (
 				F9E184ED1901574800BEC2AC /* HSDataCenter.h */,
-				F9376BD01902C5A800FFE097 /* HSCard.h */,
-				F9376BD11902C5A800FFE097 /* HSCard.m */,
 				F9E184EE1901574800BEC2AC /* HSDataCenter.m */,
 				F9376BCA1902C5A700FFE097 /* HSDeck.h */,
 				F9376BCB1902C5A700FFE097 /* HSDeck.m */,
+				F9376BDF1902C66000FFE097 /* HSCardInfo.h */,
+				F9376BE01902C66000FFE097 /* HSCardInfo.m */,
+				F9376BE21902C68100FFE097 /* HSCard.h */,
+				F9376BE31902C68100FFE097 /* HSCard.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -356,8 +401,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E184C01901521B00BEC2AC /* hero_banner_rogue.jpg in Resources */,
-				F9E184F41901654800BEC2AC /* HSDeckCell.xib in Resources */,
+				F9376BEB1902CDA800FFE097 /* card_data.data in Resources */,
 				F9E184BB1901521B00BEC2AC /* hero_banner_druid.jpg in Resources */,
+				F9376C001902D08000FFE097 /* HSCardCell.xib in Resources */,
 				F9E184C31901521B00BEC2AC /* hero_banner_warrior.jpg in Resources */,
 				F9E184BC1901521B00BEC2AC /* hero_banner_hunter.jpg in Resources */,
 				F9E184C11901521B00BEC2AC /* hero_banner_shaman.jpg in Resources */,
@@ -371,6 +417,7 @@
 				F9E184781901362E00BEC2AC /* Main.storyboard in Resources */,
 				F9E184C21901521B00BEC2AC /* hero_banner_warlock.jpg in Resources */,
 				F9E184C41901521B00BEC2AC /* hero_avatar_druid.png in Resources */,
+				F9376C031902D08000FFE097 /* HSDeckCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,18 +436,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E184F31901654800BEC2AC /* HSDeckCell.m in Sources */,
+				F9376C071902D08000FFE097 /* HSHeroSelectionViewController.m in Sources */,
 				F9E184711901362E00BEC2AC /* main.m in Sources */,
-				F9E184D51901540300BEC2AC /* HSDeckListViewController.m in Sources */,
+				F9376C0A1902D34100FFE097 /* HSCardSearchViewController.m in Sources */,
+				F9376BE41902C68100FFE097 /* HSCard.m in Sources */,
+				F9376BE11902C66000FFE097 /* HSCardInfo.m in Sources */,
+				F9376C021902D08000FFE097 /* HSDeckCell.m in Sources */,
 				F9E184EF1901574800BEC2AC /* HSDataCenter.m in Sources */,
-				F9376BD21902C5A800FFE097 /* HSCard.m in Sources */,
+				F9376C011902D08000FFE097 /* HSCardSelectionViewController.m in Sources */,
+				F9376BFF1902D08000FFE097 /* HSCardCell.m in Sources */,
+				F9376C041902D08000FFE097 /* HSDeckContentViewController.m in Sources */,
 				F9376BCC1902C5A700FFE097 /* HSDeck.m in Sources */,
-				F9E184D61901540300BEC2AC /* HSHeroSelectionViewController.m in Sources */,
-				F9E184DD1901544100BEC2AC /* HSDeckContentViewController.m in Sources */,
 				F9E184A01901369400BEC2AC /* HSAppDelegate.m in Sources */,
+				F9376C051902D08000FFE097 /* HSDeckListViewController.m in Sources */,
 				F9E184E41901549600BEC2AC /* HSDeckManagerData.xcdatamodeld in Sources */,
-				F9E184E01901546200BEC2AC /* HSCardSelectionViewController.m in Sources */,
-				F9E184DA1901541D00BEC2AC /* HSDeckStatsViewController.m in Sources */,
+				F9376C061902D08000FFE097 /* HSDeckStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

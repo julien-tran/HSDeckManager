@@ -21,6 +21,8 @@
         <attribute name="isTaunt" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isWeapon" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textDescription" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HSCard" inverseName="cardInfo" inverseEntity="HSCard" syncable="YES"/>
     </entity>
     <entity name="HSDeck" representedClassName="HSDeck" syncable="YES">
@@ -30,7 +32,7 @@
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HSCard" inverseName="parentDeck" inverseEntity="HSCard" syncable="YES"/>
     </entity>
     <elements>
-        <element name="HSCardInfo" positionX="-54" positionY="-9" width="128" height="298"/>
+        <element name="HSCardInfo" positionX="-54" positionY="-9" width="128" height="328"/>
         <element name="HSDeck" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="HSCard" positionX="-63" positionY="108" width="128" height="73"/>
     </elements>
