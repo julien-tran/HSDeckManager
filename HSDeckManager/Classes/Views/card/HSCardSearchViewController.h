@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @class HSDeck;
+@class HSCard;
 
 @interface HSCardSearchViewController : UIViewController
 @property (nonatomic, strong) HSDeck *deck;
+@property (nonatomic, strong) HSCard *card;
 @end

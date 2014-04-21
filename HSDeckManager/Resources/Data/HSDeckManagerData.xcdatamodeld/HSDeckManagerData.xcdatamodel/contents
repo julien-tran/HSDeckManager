@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="HSCard" representedClassName="HSCard" syncable="YES">
         <relationship name="cardInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSCardInfo" inverseName="cards" inverseEntity="HSCardInfo" syncable="YES"/>
         <relationship name="parentDeck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSDeck" inverseName="cards" inverseEntity="HSDeck" syncable="YES"/>
@@ -9,6 +9,7 @@
         <attribute name="canDrawCard" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="canHeal" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="canSilence" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fullname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasBattlecry" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasCharge" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="healthDurability" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -22,6 +23,7 @@
         <attribute name="isWeapon" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rarity" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="textDescription" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HSCard" inverseName="cardInfo" inverseEntity="HSCard" syncable="YES"/>
     </entity>
@@ -32,8 +34,8 @@
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HSCard" inverseName="parentDeck" inverseEntity="HSCard" syncable="YES"/>
     </entity>
     <elements>
-        <element name="HSCardInfo" positionX="-54" positionY="-9" width="128" height="328"/>
-        <element name="HSDeck" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="HSCard" positionX="-63" positionY="108" width="128" height="73"/>
+        <element name="HSCardInfo" positionX="-533" positionY="-45" width="128" height="343"/>
+        <element name="HSDeck" positionX="97" positionY="-45" width="128" height="103"/>
     </elements>
 </model>

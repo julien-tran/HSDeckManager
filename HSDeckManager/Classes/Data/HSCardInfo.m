@@ -29,5 +29,7 @@
 @dynamic cards;
 @dynamic name;
 @dynamic textDescription;
+@dynamic rarity;
+@dynamic fullname;
 
 @end

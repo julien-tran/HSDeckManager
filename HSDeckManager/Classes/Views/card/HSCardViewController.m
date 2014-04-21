@@ -9,6 +9,10 @@
 #import "HSCardViewController.h"
 #import "HSCardInfo.h"
 
+#define LEGENDARY   @"legendary"
+#define EPIC        @"epic"
+#define COMMON      @"common"
+
 @interface HSCardViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView    *cardFrame;
@@ -22,6 +26,10 @@
 @property (weak, nonatomic) IBOutlet UILabel        *healthLabel;
 @property (weak, nonatomic) IBOutlet UIImageView    *titleCardImageView;
 @property (weak, nonatomic) IBOutlet UIImageView    *rarityImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *titleSpellImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *spellImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *spellRarityImage;
+;
 
 @end
 
@@ -52,35 +60,60 @@
 
 - (void)updateUI
 {
+    // Common
+    self.attackLabel.hidden = (self.cardInfo.isSpell.boolValue);
+    self.healthLabel.hidden = (self.cardInfo.isSpell.boolValue);
+    NSString *title = [NSString stringWithFormat:@"Title_%@.png", self.cardInfo.name];
+    self.titleCardImageView.image = [UIImage imageNamed:title];
+    self.titleSpellImageView.image = nil;
+    self.manaLabel.text = [NSString stringWithFormat:@"%d", self.cardInfo.manaCost.intValue];
+    self.descriptionView.text = self.cardInfo.textDescription;
+
     if (self.cardInfo.isMinion.boolValue)
     {
         self.minionImage.image = [UIImage imageNamed:self.cardInfo.name];
         self.weaponImage.image = nil;
+        self.spellImageView.image = nil;
         self.cardFrame.image = [UIImage imageNamed:@"cardframe_minion.png"];
-//        self.legendaryFrame.hidden = !minion.isLegendary;
-//        self.descriptionView.text = self.card.cardDescription;
-        self.manaLabel.text = [NSString stringWithFormat:@"%d", self.cardInfo.manaCost.intValue];
+        self.legendaryFrame.hidden = ![self.cardInfo.rarity isEqualToString:LEGENDARY];
         self.attackLabel.text = [NSString stringWithFormat:@"%d", self.cardInfo.attack.intValue];
         self.healthLabel.text = [NSString stringWithFormat:@"%d", self.cardInfo.healthDurability.intValue];
-        NSString *title = [NSString stringWithFormat:@"Title_%@.png", self.cardInfo.name];
-        self.titleCardImageView.image = [UIImage imageNamed:title];
+        
+        self.rarityImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",self.cardInfo.rarity]];
+        self.spellRarityImage.image = nil;
     }
-    else if (self.cardInfo.isWeapon)
+    else if (self.cardInfo.isWeapon.boolValue)
     {
         self.weaponImage.image = [UIImage imageNamed:self.cardInfo.name];
         self.minionImage.image = nil;
+        self.spellImageView.image = nil;
+        
         self.cardFrame.image = [UIImage imageNamed:@"cardframe_weapon.png"];
-//        self.legendaryFrame.hidden = YES;
+        self.legendaryFrame.hidden = YES;
+    }
+    else if (self.cardInfo.isSpell.boolValue)
+    {
+        self.spellImageView.image = [UIImage imageNamed:self.cardInfo.name];
+        self.weaponImage.image = nil;
+        self.minionImage.image = nil;
+        
+        self.cardFrame.image = [UIImage imageNamed:@"cardframe_spell.png"];
+        self.legendaryFrame.hidden = YES;
+        
+        self.titleCardImageView.image = nil;
+        self.titleSpellImageView.image = [UIImage imageNamed:title];
+        
+        self.rarityImageView.image = nil;
+        self.spellRarityImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"spell_%@.png",self.cardInfo.rarity]];
+
     }
     else
     {
         self.minionImage.image = nil;
         self.weaponImage.image = nil;
         self.cardFrame.image = nil;
-//        self.legendaryFrame.hidden = YES;
+        self.legendaryFrame.hidden = YES;
     }
-    
-//    self.rarityImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",self.card.rarity]];
 }
 
 @end

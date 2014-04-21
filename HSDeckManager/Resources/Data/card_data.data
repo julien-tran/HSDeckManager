@@ -1,10 +1,412 @@
-1|Abomination|5|4|4
-1|AbusiveSergeant|1|2|1
-1|AcidicSwampOoze|2|3|2
-1|AcolyteofPain|3|1|3
-1|AlarmOBot|3|0|3
-1|Alextraza|9|8|8
-1|AmaniBerserker|2|2|3
-1|AncientBrewmaster|4|5|4
-1|BaineBloodhoof|6|4|5
-1|BigGameHunter|3|4|2
+1|Abomination|5|4|4|neutral|rare|Abomination|Taunt. Deathrattle: Deal 2 damage to ALL characters.
+1|AbusiveSergeant|1|2|1|neutral|common|Abusive Sergeant|Battlecry: Give a minion +2 Attack until end of turn
+1|AcidicSwampOoze|2|3|2|neutral|common|Acidic Swamp Ooze|Battlecry: Destroy your opponent's weapon.
+1|AcolyteofPain|3|1|3|neutral|common|Acolyte of Pain|Whenever this minion takes damage, draw a card.
+1|AlAkirTheWindlord|8|3|5|shaman|legendary|Al'Akir the Windlord|Windfury. Charge. Divine Shield. Taunt.
+1|AlarmOBot|3|0|3|neutral|rare|Alarm-o-Bot|At the start of your turn, swap this minion with a random one in your hand.
+1|AldorPeacekeeper|3|3|3|paladin|rare|Aldor Peacekeeper|Battlecry: Change an enemy minion's Attack to 1.
+1|Alextraza|9|8|8|neutral|legendary| Alextraza |Battlecry: Set a hero's remaining Health to 15.
+1|AmaniBerserker|2|2|3|neutral|common|Amani Berserker|Enrage: +3 Attack.
+2|AncestralHealing|0|0|0|shaman|basic|Ancestral Healing|Restore a minion to full Health and give it Taunt
+2|AncestralSpirit|2|0|0|shaman|rare|Ancestral Spirit|Choose a minion. When that minion is destroyed, return it to the battlefield.
+1|AncientBrewmaster|4|5|4|neutral|common|Ancient Brewmaster|Battlecry: Return a friendly minion from the battlefield to your hand.
+1|AncientMage|4|2|5|neutral|rare|Ancient Mage|Battlecry: Give adjacent minions Spell Power +1.
+1|AncientofLore|7|5|5|druid|epic|Ancient of Lore|Choose One - Draw 2 cards; or Restore 5 Health.
+1|AncientofWar|7|5|5|druid|epic|Ancient of War|Choose One - Ancient of War gets +5 Health and Taunt; or +5 Attack.
+1|AncientWatcher|2|4|5|neutral|rare|Ancient Watcher|Can't Attack.
+1|AngryChicken|1|1|1|neutral|rare|Angry Chicken|Enrage: +5 Attack.
+2|AnimalCompanion|3|0|0|hunter|common|Animal Companion|Summon a random Beast Companion
+1|ArathiWeaponsmith|4|3|3|warrior|common|Arathi Weaponsmith|Battlecry: Equip a 2/2 weapon.
+2|ArcaneExplosion|2|0|0|mage|basic|Arcane Explosion|Deal 1 damage to all enemy minions
+1|ArcaneGolem|3|4|2|neutral|rare|Arcane Golem|Charge. Battlecry: Give your opponent a Mana Crystal.
+2|ArcaneIntellect|3|0|0|mage|basic|Arcane Intellect|Draw 2 cards.
+2|ArcaneMissiles|1|0|0|mage|basic|Arcane Missiles|Shoot 3 missiles at random enemies for 1 damage each.
+2|ArcaneShot|1|0|0|hunter|basic|Arcane Shot|Deal 2 damage
+3|ArcaniteReaper|5|5|2|warrior|common|Arcanite Reaper|
+1|Archmage|6|4|7|neutral|common|Archmage|Spell Power +1
+1|ArchmageAntonidas|7|5|7|mage|legendary|Archmage Antonidas|Whenever you cast a spell, put a Fireball spell into your hand.
+1|ArgentCommander|6|4|2|neutral|rare|Argent Commander|Charge. Divine Shield
+1|ArgentProtector|2|2|2|paladin|common|Argent Protector|Battlecry: Give a friendly minion Divine Shield.
+1|ArgentSquire|1|1|1|neutral|common|Argent Squire|Divine Shield
+1|Armorsmith|2|1|4|warrior|rare|Armorsmith|Whenever a friendly minion takes damage, gain 1 Armor.
+3|Ashbringer|5|5|3|paladin|legendary|Ashbringer|
+3|AssassinsBlade|5|3|4|rogue|common|Assassin's Blade|
+2|Assassinate|5|0|0|rogue|basic|Assassinate|Destroy an enemy minion.
+1|AuchenaiSoulpriest|4|3|5|priest|rare|Auchenai Soulpriest|Your cards and powers that restore Health now deal damage instead.
+2|AvengingWrath|6|0|0|paladin|epic|Avenging Wrath|Shoot 8 missiles at random enemies for 1 damage each.
+1|AzureDrake|5|4|4|neutral|rare|Azure Drake|Spell Power +1. Battlecry: Draw a card.
+2|Backstab|0|0|0|rogue|basic|Backstab|Deal 2 damage to an undamaged minion.
+2|BaneOfDoom|5|0|0|warlock|epic|Bane of Doom|Deal 2 damage to a character. If that kills it, summon a random Demon.
+1|BaronGeddon|7|7|5|neutral|legendary|Baron Geddon|At the end of your turn, deal 2 damage to ALL other characters
+1|Barrel|0|0|2|neutral|common|Barrel|Is something in this barrel?
+2|BarrelToss|1|0|0|neutral|common|Barrel Toss|Deal 2 damage
+2|BattleRage|2|0|0|warrior|common|Battle Rage|Draw a card for each damaged friendly character
+2|BestialWrath|1|0|0|hunter|epic|Bestial Wrath|Give a Beast +2 Attack and Immune this turn.
+2|Betrayal|2|0|0|rogue|common|Betrayal|An enemy minion deals its damage to the minions next to it.
+1|BigGameHunter|3|4|2|neutral|epic|Big Game Hunter|Battlecry: Destroy a minion with an Attack of 7 or more.
+2|Bite|4|0|0|druid|rare|Bite|Give your hero +4 Attack this turn and 4 Armor.
+2|BladeFlurry|2|0|0|rogue|rare|Blade Flurry|Destroy your weapon and deal its damage to all enemies.
+2|BlessedChampion|5|0|0|paladin|rare|Blessed Champion|Double a minion's Attack.
+2|BlessingOfKings|4|0|0|paladin|common|Blessing of Kings|Give a minion +4/+4 (+4 Attack / +4 Health)
+2|BlessingOfMight|1|0|0|paladin|basic|Blessing of Might|Give a minion +3 Attack.
+2|BlessingOfWisdom|1|0|0|paladin|common|Blessing of Wisdom|Choose a minion. Whenever it attacks, draw a card.
+2|Blizzard|6|0|0|mage|rare|Blizzard|Deal 2 damage to all enemy minions and Freeze them.
+1|BloodImp|1|0|1|warlock|common|Blood Imp|Stealth. At the end of your turn, give another random friendly minion +1 Health.
+1|BloodKnight|3|3|3|neutral|epic|Blood Knight|Battlecry: All minions lose Divine Shield. Gain +3/+3 for each Shield lost.
+1|BloodfenRaptor|2|3|2|neutral|basic|Bloodfen Raptor|
+2|Bloodlust|5|0|0|shaman|common|Bloodlust|Give your minions +3 Attack this turn.
+1|BloodmageThalnos|2|1|1|neutral|legendary|Bloodmage Thalnos|Spell Power +1/ Deathrattle: Draw a card.
+1|BloodsailCorsair|1|1|2|neutral|rare|Bloodsail Corsair|Battlecry: Remove 1 Durability from your opponent's weapon.
+1|BloodsailRaider|2|2|3|neutral|common|Bloodsail Raider|Battlecry: Gain Attack equal to the Attack of your weapon.
+1|BluegillWarrior|2|2|1|neutral|common|Bluegill Warrior|Charge.
+1|BootyBayBodyguard|5|5|4|neutral|common|Booty Bay Bodyguard|Taunt
+1|BoulderfistOgre|6|6|7|neutral|basic|Boulderfist Ogre|
+2|Brawl|5|0|0|warrior|epic|Brawl|Destroy all minions except one. (chosen randomly)
+1|Brewmaster|4|4|4|neutral|common|Brewmaster|
+1|CabalShadowPriest|6|4|5|priest|epic|Cabal Shadow Priest|Battlecry: Take control of an enemy minion that has 2 or less Attack.
+1|CairneBloodhoof|6|4|5|neutral|legendary|Cairne Bloodhoof|Deathrattle: Summon a 4/5 Baine Bloodhoof.
+1|CaptainGreenskin|5|5|4|neutral|legendary|Captain Greenskin|Give your weapon +1/+1
+1|CaptainsParrot|2|1|1|neutral|epic|Captain's Parrot|Battlecry: Put a random Pirate from your deck into your hand.
+1|Cenarius|9|5|8|druid|legendary|Cenarius|Choose One - Give all friendly minions +2/+2; or summon two 2/2 Treants with Taunt.
+2|Charge|3|0|0|warrior|basic|Charge|Give a friendly minion +2 Attack and Charge
+1|ChillwindYeti|4|4|5|neutral|common|Chillwind Yeti|
+2|CircleOfHealing|0|0|0|priest|common|Circle of Healing|Restore 4 Health to ALL minions.
+2|Claw|1|0|0|druid|basic|Claw|Give your hero +2 Attack this turn and 2 Armor
+2|Cleave|2|0|0|warrior|common|Cleave|Deal 2 damage to two random enemy minions.
+2|ColdBlood|1|0|0|rogue|common|Cold Blood|Give a minion +2 Attack. Combo: +4 Attack instead.
+1|ColdlightOracle|3|2|2|neutral|rare|Coldlight Oracle|Battlecry: Each player draws 2 cards.
+1|ColdlightSeer|3|2|3|neutral|rare|Coldlight Seer|Battlecry: Give ALL other Murlocs +2 Health.
+2|CommandingShout|2|0|0|warrior|rare|Commanding Shout|Your minions can't be reduced below 1 Health this turn. Draw a card.
+2|Conceal|1|0|0|rogue|common|Conceal|Give your minions Stealth until your next turn.
+2|ConeOfCold|4|0|0|mage|common|Cone of Cold|Freeze a minion and the minions next to it, and deal 1 damage to them.
+2|Consecration|4|0|0|paladin|common|Consecration|Deal 2 damage to all enemies.
+1|CoreHound|7|9|5|neutral|common|Core Hound|
+2|Corruption|1|0|0|warlock|common|Corruption|Choose an enemy minion. At the start of your turn, destroy it.
+2|Counterspell|3|0|0|mage|rare|Counterspell|Secret: When your opponent casts a spell, Counter it.
+1|CrazedAlchemist|2|2|2|neutral|rare|Crazed Alchemist|Battlecry: Swap the Attack and Health of a minion.
+1|CrazedHunter|1|1|1|neutral|common|Crazed Hunter|
+1|CrazyMonkey|1|1|2|neutral|common|Crazy Monkey|Battlecry: Throw Bananas.
+1|CruelTaskmaster|2|2|2|warrior|common|Cruel Taskmaster|Battlecry: Deal 1 damage to a minion and give it +2 Attack.
+1|CultMaster|4|4|2|neutral|common|Cult Master|When one of your other minions dies, draw a card.
+1|DalaranMage|3|1|4|neutral|common|Dalaran Mage|Spell Power +1
+1|DarkIronDwarf|4|4|4|neutral|common|Dark Iron Dwarf|Battlecry: Give a minion +2 Attack until end of turn
+1|DarkscaleHealer|5|4|5|neutral|common|Darkscale Healer|Battlecry: Restore 2 Health to all friendly characters.
+2|DeadlyPoison|1|0|0|rogue|basic|Deadly Poison|Give your weapon +2 Attack.
+2|DeadlyShot|3|0|0|hunter|common|Deadly Shot|Destroy a random enemy minion.
+1|Deathwing|10|12|12|neutral|legendary|Deathwing|Battlecry: Destroy all other minions and discard your hand.
+1|DefenderofArgus|4|2|3|neutral|rare|Defender of Argus|Battlecry: Give adjacent minions +1/+1 and Taunt.
+1|DefiasRingleader|2|2|2|rogue|common|Defias Ringleader|Combo: Summon a 2/1 Defias Bandit.
+1|Demolisher|3|1|4|neutral|rare|Demolisher|At the start of your turn, deal 2 damage to a random enemy.
+2|Demonfire|2|0|0|warlock|common|Demonfire|Deal 2 damage to a minion. If it's a friendly Demon, give it +2/+2 instead.
+1|DireWolfAlpha|2|2|2|neutral|common|Dire Wolf Alpha|Adjacent minions have +1 Attack.
+2|DivineFavor|2|0|0|paladin|rare|Divine Favor|Draw cards until you have as many in hand as your opponent.
+2|DivineSpirit|2|0|0|priest|common|Divine Spirit|Double a minion's Health.
+1|Doomguard|5|5|7|warlock|rare|Doomguard|Charge. Battlecry: Discard two random cards.
+3|Doomhammer|5|2|8|shaman|epic|Doomhammer|Windfury, Overload: (2)
+1|Doomsayer|2|0|7|neutral|epic|Doomsayer|At the start of your turn, destroy ALL minions.
+1|DragonlingMechanic|4|2|4|neutral|common|Dragonling Mechanic|Battlecry: Summon a 2/1 Mechanical Dragonling.
+2|DrainLife|3|0|0|warlock|basic|Drain Life|Deal 2 damage. Restore 2 Health to your hero.
+1|DreadCorsair|4|3|3|neutral|common|Dread Corsair|Taunt. Costs (1) less per Attack of your weapon.
+1|DreadInfernal|6|6|6|warlock|common|Dread Infernal|Battlecry: Deal 1 damage to ALL other characters.
+2|Dream|0|0|0|neutral|basic|Dream|Return a minion to its owner's hand.
+1|DruidOftheClaw|5|4|4|druid|common|Druid of the Claw|Choose One - Charge; or +2 Health and Taunt.
+1|DustDevil|1|3|1|shaman|common|Dust Devil|Windfury. Overload (2)
+3|EaglehornBow|3|3|2|hunter|rare|Eaglehorn Bow|Whenever a Secret is revealed, gain +1 Durability.
+1|EarthElemental|5|7|8|shaman|epic|Earth Elemental|Taunt. Overload: (3)
+2|EarthShock|1|0|0|shaman|common|Earth Shock|Silence a minion, then deal 1 damage to it.
+1|EarthenRingFarseer|3|3|3|neutral|common|Earthen Ring Farseer|Battlecry: Restore 3 Health.
+1|EdwinVanCleef|3|2|2|rogue|legendary|Edwin VanCleef|Combo: Gain +2/+2 for each other card played this turn.
+1|EliteTaurenChieftain|5|5|5|neutral|legendary|Elite Tauren Chieftain|Battlecry: Give both players the power to ROCK! (with a Power Chord card)
+1|ElvenArcher|1|1|1|neutral|common|Elven Archer|Battlecry: Deal 1 damage.
+1|EmperorCobra|3|2|3|neutral|rare|Emperor Cobra|Destroy any minion damaged by this minion.
+2|Equality|2|0|0|paladin|rare|Equality|Change the Health of ALL minions to 1.
+1|EtherealArcanist|4|3|3|mage|rare|Ethereal Arcanist|If you control a Secret at the end of your turn, gain +2/+2.
+2|Eviscerate|2|0|0|rogue|common|Eviscerate|Deal 2 damage. Combo: Deal 4 damage instead.
+2|Execute|1|0|0|warrior|basic|Execute|Destroy a damaged enemy minion.
+2|ExplosiveShot|5|0|0|hunter|rare|Explosive Shot|Deal 5 damage to a minion and 2 damage to adjacent ones.
+2|ExplosiveTrap|2|0|0|hunter|common|Explosive Trap|Secret: When your hero is attacked, deal 2 damage to all enemies.
+2|EyeForAnEye|1|0|0|paladin|common|Eye for an Eye|Secret: When your hero takes damage, deal that much damage to the enemy hero.
+1|FacelessManipulator|5|3|3|neutral|epic|Faceless Manipulator|Battlecry: Choose a minion and become a copy of it.
+1|FaerieDragon|2|3|2|neutral|common|Faerie Dragon|Can't be targeted by Spells or Hero Powers.
+2|FanOfKnives|3|0|0|rogue|common|Fan of Knives|Deal 1 damage to all enemy minions. Draw a card.
+2|FarSight|3|0|0|shaman|epic|Far Sight|Draw a card. That card costs (3) less.
+1|Felguard|3|3|5|warlock|rare|Felguard|Taunt. Battlecry: Destroy one of your Mana Crystals.
+1|FenCreeper|5|3|6|neutral|common|Fen Creeper|Taunt
+2|FeralSpirit|3|0|0|shaman|rare|Feral Spirit|Summon two 2/3 Spirit Wolves with Taunt. Overload: (2)
+3|FieryWarAxe|2|3|2|warrior|basic|Fiery War Axe|
+1|FireElemental|6|6|5|shaman|common|Fire Elemental|Battlecry: Deal 3 damage.
+2|Fireball|4|0|0|mage|basic|Fireball|Deal 6 damage.
+2|FlameBurst|3|0|0|neutral|common|Flame Burst|Shoot 5 missiles at random enemies for 1 damage each.
+1|FlameImp|1|3|2|warlock|common|Flame Imp|Battlecry: Deal 3 damage to your hero.
+2|Flamestrike|7|0|0|mage|common|Flamestrike|Deal 4 damage to all enemy minions.
+2|Flare|1|0|0|hunter|rare|Flare|All minions lose Stealth. Destroy all enemy Secrets. Draw a card.
+1|FlesheatingGhoul|3|2|3|neutral|common|Flesheating Ghoul|Whenever a minion dies, gain +1 Attack.
+2|ForceOfNature|6|0|0|druid|epic|Force of Nature|Summon three 2/2 Treants with Charge that die at the end of the turn.
+2|ForkedLightning|1|0|0|shaman|common|Forked Lightning|Deal 2 damage to 2 random enemy minions. Overload: (2)
+2|FreezingTrap|2|0|0|hunter|common|Freezing Trap|Secret: When an enemy minion attacks, return it to its owner's hand and it costs (2) more.
+1|FrostElemental|6|5|5|neutral|common|Frost Elemental|Battlecry: Freeze a character.
+2|FrostNova|3|0|0|mage|common|Frost Nova|Freeze all enemy minions.
+2|FrostShock|1|0|0|shaman|basic|Frost Shock|Deal 1 damage to an enemy character and Freeze it.
+2|Frostbolt|2|0|0|mage|common|Frostbolt|Deal 3 damage to a character and Freeze it.
+1|FrostwolfGrunt|2|2|2|neutral|common|Frostwolf Grunt|Taunt
+1|FrostwolfWarlord|5|4|4|neutral|common|Frostwolf Warlord|Battlecry: Has +1/+1 for each other friendly minion on the battlefield.
+1|FrothingBerserker|3|2|4|warrior|rare|Frothing Berserker|Whenever a minion takes damage, gain +1 Attack.
+1|GadgetzanAuctioneer|5|4|4|neutral|rare|Gadgetzan Auctioneer|When you cast a spell, draw a card.
+1|GelbinMekkatorque|6|6|6|neutral|legendary|Gelbin Mekkatorque|Battlecry: Summon an AWESOME invention.
+3|GladiatorsLongbow|7|5|2|hunter|epic|Gladiator's Longbow|Your hero is Immune while attacking.
+1|GnomishInventor|4|2|4|neutral|common|Gnomish Inventor|Battlecry: Draw a card.
+1|GoldshireFootman|1|1|2|neutral|common|Goldshire Footman|Taunt
+3|Gorehowl|7|7|1|warrior|epic|Gorehowl|Attacking a minion costs 1 Attack instead of 1 Durability.
+1|GrimscaleOracle|1|1|1|neutral|common|Grimscale Oracle|ALL other Murlocs have +1 Attack.
+1|GromHellscream|8|4|9|warrior|legendary|Grommash Hellscream|Charge. Enrage: +6 Attack
+1|Gruul|8|7|7|neutral|legendary|Gruul|At the end of each turn, gain +1/+1 .
+1|GuardianOfKings|7|5|6|paladin|common|Guardian of Kings|Battlecry: Restore 6 Health to your hero.
+1|GurubashiBerserker|5|2|7|neutral|common|Gurubashi Berserker|Whenever this minion takes damage, gain +3 Attack.
+2|HammerOfWrath|4|0|0|paladin|basic|Hammer of Wrath|Deal 3 damage. Draw a card.
+2|HandOfProtection|1|0|0|paladin|basic|Hand of Protection|Give a minion Divine Shield.
+1|HarrisonJones|5|5|4|neutral|legendary|Harrison Jones|Battlecry: Destroy your opponent's weapon and draw cards equal to its Durability.
+1|HarvestGolem|3|2|3|neutral|common|Harvest Golem|Deathrattle: Summon a 2/1 Damaged Golem
+2|Headcrack|3|0|0|rogue|rare|Headcrack|Deal 2 damage to the enemy hero. Combo: Return this card to your hand next turn.
+2|HealingTouch|3|0|0|druid|basic|Healing Touch|Restore 8 Health.
+2|Hellfire|4|0|0|warlock|basic|Hellfire|Deal 3 damage to ALL characters.
+2|HeroicStrike|2|0|0|warrior|basic|Heroic Strike|Give your hero +4 Attack this turn.
+2|Hex|3|0|0|shaman|basic|Hex|Transform a minion into a 0/1 Frog with Taunt.
+1|Hogger|6|4|4|neutral|legendary|Hogger|At the end of your turn, summon a 2/2 Gnoll with Taunt.
+2|HoggerSMASH!|3|0|0|neutral|common|Hogger SMASH!|Deal 4 damage.
+2|HolyFire|6|0|0|priest|rare|Holy Fire|Deal 5 damage. Restore 5 health to your hero
+2|HolyLight|2|0|0|paladin|basic|Holy Light|Restore 6 Health.
+2|HolyNova|5|0|0|priest|common|Holy Nova|Deal 2 damage to all enemies. Restore 2 Health to all friendly characters.
+2|HolySmite|1|0|0|priest|basic|Holy Smite|Deal 2 damage.
+2|HolyWrath|5|0|0|paladin|rare|Holy Wrath|Draw a card and deal damage equal to its cost.
+1|Houndmaster|4|4|3|hunter|basic|Houndmaster|Battlecry: Give a friendly Beast +2/+2 and Taunt
+2|Humility|1|0|0|paladin|common|Humility|Change a minion's Attack to 1.
+1|HungryCrab|1|1|2|neutral|epic|Hungry Crab|Battlecry: Destroy a Murloc and gain +2/+2.
+2|HuntersMark|0|0|0|hunter|common|Hunter's Mark|Change a minion's Health to 1
+2|IAmMurloc|4|0|0|neutral|basic|I Am Murloc|Summon three, four, or five 1/1 Murlocs.
+2|IceBarrier|3|0|0|mage|common|Ice Barrier|Secret: As soon as your hero is attacked, gain 8 Armor.
+2|IceBlock|3|0|0|mage|epic|Ice Block|Secret: When your hero takes fatal damage, prevent it and become Immune this turn.
+2|IceLance|1|0|0|mage|common|Ice Lance|Freeze a character. If it was already Frozen deal 4 damage instead.
+1|IllidanStormrage|6|7|5|neutral|legendary|Illidan Stormrage|Whenever you play a card, summon a 2/1 Flame of Azzinoth.
+1|ImpMaster|3|1|5|neutral|rare|Imp Master|At the end of your turn, deal 1 damage to this minion and summon a 1/1 Imp.
+1|InjuredBlademaster|3|4|7|neutral|rare|Injured Blademaster|Battlecry: Deal 4 damage to HIMSELF.
+2|InnerFire|1|0|0|priest|common|Inner Fire|Change a minion's Attack to be equal to its Health.
+2|InnerRage|0|0|0|warrior|common|Inner Rage|Deal 1 damage to a minion. It gains +2 Attack
+2|Innervate|0|0|0|druid|basic|Innervate|Gain 2 Mana Crystal this turn only.
+1|IronbarkProtector|8|8|8|druid|common|Ironbark Protector|Taunt
+1|IronbeakOwl|2|2|1|neutral|common|Ironbeak Owl|Battlecry: Silence a minion.
+1|IronforgeRifleman|3|2|2|neutral|common|Ironforge Rifleman|Battlecry: Deal 1 damage.
+1|IronfurGrizzly|3|3|3|neutral|common|Ironfur Grizzly|Taunt
+1|JunglePanther|3|4|2|neutral|common|Jungle Panther|Stealth
+1|KeeperOfTheGrove|4|2|4|druid|rare|Keeper of the Grove|Choose One - Deal 2 damage; or Silence a minion.
+1|Kidnapper|6|5|3|rogue|epic|Kidnapper|Combo: Return a minion to its owner's hand.
+2|KillCommand|3|0|0|hunter|common|Kill Command|Deal 3 damage. If you have a Beast, deal 5 damage instead
+1|KingKrush|9|8|8|hunter|legendary|King Krush|Charge
+1|KingMukla|3|5|5|neutral|legendary|King Mukla|Battlecry: Give your opponent two Bananas.
+1|KirinTorMage|3|4|3|mage|rare|Kirin Tor Mage|Battlecry: The next Secret you play this turn costs (0).
+1|KnifeJuggler|2|3|2|neutral|rare|Knife Juggler|When you play a minion, deal 1 damage to a random enemy.
+1|KoboldGeomancer|2|2|2|neutral|common|Kobold Geomancer|Spell Power +1
+1|KorkronElite|4|4|3|warrior|common|Kor'kron Elite|Charge
+1|LaughingSister|3|3|5|neutral|basic|Laughing Sister|Can't be targeted by Spells or Hero Powers.
+2|LavaBurst|3|0|0|shaman|rare|Lava Burst|Deal 5 damage. Overload: (2)
+2|LayOnHands|8|0|0|paladin|epic|Lay on Hands|Restore 8 Health. Draw 3 cards.
+1|LeeroyJenkins|4|6|2|neutral|legendary|Leeroy Jenkins|Charge Battlecry: Summon two 1/1 Whelps for your opponent.
+2|LegacyoftheEmperor|3|0|0|neutral|common|Legacy of the Emperor|Give your minions +2/+2. (+2 Attack/+2 Health)
+1|LeperGnome|1|2|1|neutral|common|Leper Gnome|Deathrattle: Deal 2 damage to the enemy hero.
+3|LightsJustice|1|1|4|paladin|basic|Light's Justice|
+2|LightningBolt|1|0|0|shaman|common|Lightning Bolt|Deal 3 damage. Overload: (1)
+2|LightningStorm|3|0|0|shaman|rare|Lightning Storm|Deal 2-3 damage to all enemy minions. Overload: (2)
+1|Lightspawn|4|0|5|priest|common|Lightspawn|This minion's Attack is always equal to its Health.
+1|Lightwarden|1|1|2|neutral|rare|Lightwarden|Whenever a character is healed, gain +2 Attack.
+1|Lightwell|2|0|5|priest|rare|Lightwell|At the start of your turn, restore 3 Health to a damaged friendly character.
+1|LootHoarder|2|2|1|neutral|common|Loot Hoarder|Deathrattle: Draw a card.
+1|LordJaraxxus|9|3|15|warlock|legendary|Lord Jaraxxus|Battlecry: Destroy your hero and replace him with Lord Jaraxxus.
+1|LordoftheArena|6|6|5|neutral|common|Lord of the Arena|Taunt
+1|LorewalkerCho|2|0|4|neutral|legendary|Lorewalker Cho|Whenever a player casts a spell, put a copy into the other player's hand.
+1|MadBomber|2|3|2|neutral|common|Mad Bomber|Battlecry: Deal 3 damage randomly split between all other characters.
+1|MagmaRager|3|5|1|neutral|basic|Magma Rager|
+1|Malygos|9|4|12|neutral|legendary|Malygos|Spell Power +5
+1|ManaAddict|2|1|3|neutral|rare|Mana Addict|Whenever you cast a spell, gain +2 Attack this turn.
+1|ManaTideTotem|3|0|3|shaman|rare|Mana Tide Totem|At the end of your turn, draw a card.
+1|ManaWraith|2|2|2|neutral|rare|Mana Wraith|ALL minions costs (1) more.
+1|ManaWyrm|1|1|3|mage|common|Mana Wyrm|Whenever you cast a spell, gain +1 Attack.
+2|MarkOfNature|3|0|0|druid|common|Mark of Nature|Choose One - Give a minion +4 Attack; or +4 Health and Taunt.
+2|MarkOfTheWild|2|0|0|druid|basic|Mark of the Wild|Give a minion Taunt and +2/+2.
+2|MassDispel|4|0|0|priest|rare|Mass Dispel|Silence all enemy minions. Draw a card.
+1|MassiveGnoll|4|5|2|neutral|common|Massive Gnoll|
+1|MasterOfDisguise|4|4|4|rogue|rare|Master of Disguise|Battlecry: Give a friendly minion Stealth.
+1|MasterSwordsmith|2|1|3|neutral|rare|Master Swordsmith|At the end of your turn, give another random friendly Minion +1 Attack.
+2|Metamorphosis|6|0|0|neutral|common|Metamorphosis|Do something crazy.
+1|MillhouseManastorm|2|4|4|neutral|legendary|Millhouse Manastorm|Battlecry: Enemy spells cost 0 next turn
+2|MindBlast|2|0|0|priest|basic|Mind Blast|Deal 5 damage to the enemy hero.
+2|MindControl|10|0|0|priest|common|Mind Control|Take control of an enemy minion.
+1|MindControlTech|3|3|3|neutral|rare|Mind Control Tech|Battlecry: If your opponent has 4 or more minions, take control of one at random.
+2|MindVision|1|0|0|priest|common|Mind Vision|Take a random card from your opponent's hand.
+2|Mindgames|4|0|0|priest|epic|Mindgames|Put a copy of a random minion from your opponent's deck into the battlefield.
+2|MirrorEntity|3|0|0|mage|common|Mirror Entity|Secret: When your opponent plays a minion, summon a copy of it.
+2|MirrorImage|1|0|0|mage|common|Mirror Image|Summon two 0/2 minions with Taunt.
+2|Misdirection|2|0|0|hunter|rare|Misdirection|Secret: when a character attacks your hero, instead he attacks another random character.
+1|MogushanWarden|4|1|7|neutral|common|Mogu'shan Warden|Taunt
+1|MoltenGiant|20|8|8|neutral|epic|Molten Giant|Costs (1) less for each damage your hero has taken.
+2|Moonfire|0|0|0|druid|common|Moonfire|Deal 1 damage.
+2|MortalCoil|1|0|0|warlock|common|Mortal Coil|Deal 1 damage to a minion. If that kills it, draw a card.
+2|MortalStrike|4|0|0|warrior|rare|Mortal Strike|Deal 4 damage. If your hero has 12 or less Health, deal 6 damage instead.
+1|MountainGiant|12|8|8|neutral|epic|Mountain Giant|Costs (1) less for each other card in your hand.
+1|MuklasBigBrother|6|10|10|neutral|common|Mukla's Big Brother|So strong! And only 6 Mana?!
+2|MultiShot|4|0|0|hunter|basic|Multi-Shot|Deal 3 damage to two random enemy minions.
+1|MurlocRaider|1|2|1|neutral|basic|Murloc Raider|
+1|MurlocScout|0|1|1|neutral|common|Murloc Scout|
+1|MurlocTidecaller|1|1|2|neutral|rare|Murloc Tidecaller|Whenever a Murloc is summoned, gain +1 Attack.
+1|MurlocTidehunter|2|2|1|neutral|common|Murloc Tidehunter|Battlecry: Summon a 1/1 Murloc Scout.
+1|MurlocWarleader|3|3|3|neutral|epic|Murloc Warleader|ALL other Murlocs have +2/+1.
+1|NagaMyrmidon|1|1|1|neutral|common|Naga Myrmidon|
+1|NatPagle|2|0|4|neutral|legendary|Nat Pagle|At the end of your turn, you have 50% chance to draw a card.
+2|Naturalize|1|0|0|druid|common|Naturalize|Destroy a minion. Your opponent draws 2 cards.
+1|Nightblade|5|4|4|neutral|basic|Nightblade|Battlecry: Deal 3 damage to the enemy hero.
+2|Nightmare|0|0|0|neutral|basic|Nightmare|Give a minion +5/+5. At the start of your next turn, destroy it.
+2|NobleSacrifice|1|0|0|paladin|common|Noble Sacrifice|Secret: When an enemy attacks, summon a 2/1 Defender as the new target.
+1|NorthshireCleric|1|1|3|priest|basic|Northshire Cleric|When a minion is healed, draw a card.
+2|Nourish|5|0|0|druid|rare|Nourish|Choose One - Gain 2 Mana Crystals; or Draw 3 cards.
+1|NoviceEngineer|2|1|1|neutral|basic|Novice Engineer|Battlecry: Draw a card.
+1|Nozdormu|9|8|8|neutral|legendary|Nozdormu|Players only have 15 seconds to take their turns.
+1|OasisSnapjaw|4|2|7|neutral|basic|Oasis Snapjaw|
+1|OgreMagi|4|4|4|neutral|common|Ogre Magi|Spell Power +1
+1|OldMurkEye|4|2|4|neutral|legendary|Old Murk-Eye|Charge. Has +1 Attack for each other Murloc on the battlefield.
+1|Onyxia|9|8|8|neutral|legendary|Onyxia|Battlecry: Summon 1/1 Whelps until your side of the battlefield is full.
+1|PandarenScout|1|1|1|neutral|common|Pandaren Scout|
+1|PatientAssassin|2|1|1|rogue|epic|Patient Assassin|Stealth. Destroy any minion damaged by this minion
+3|PerditionsBlade|3|2|2|rogue|rare|Perdition's Blade|Battlecry: Deal 1 damage. Combo: Deal 2 instead.
+1|PintSizedSummoner|2|2|2|neutral|rare|Pint-Sized Summoner|The first minion you play each turn costs (1) less.
+1|PitLord|4|5|6|warlock|epic|Pit Lord|Battlecry: Deal 5 damage to your hero.
+2|Polymorph|4|0|0|mage|basic|Polymorph|Transform a minion into a 1/1 Sheep.
+2|PowerOfTheHorde|4|0|0|neutral|basic|Power of the Horde|Summon a random Horde Warrior
+2|PowerOfTheWild|2|0|0|druid|common|Power of the Wild|Choose One - Give your minions +1/+1; or summon a 3/2 Panther.
+2|PowerOverwhelming|1|0|0|warlock|common|Power Overwhelming|Give a friendly minion +4/+4 until the end of turn. Then, it dies. Horribly.
+2|PowerWordShield|1|0|0|priest|basic|Power Word: Shield|Give a minion +2 Health. Draw a card.
+2|Preparation|0|0|0|rogue|epic|Preparation|The next spell you cast this turn costs (3) less.
+1|PriestessofElune|6|5|4|neutral|common|Priestess of Elune|Battlecry: Restore 4 Health to your hero.
+1|ProphetVelen|7|7|7|priest|legendary|Prophet Velen|Double the damage and healing of your spells and hero power
+2|Pyroblast|10|0|0|mage|epic|Pyroblast|Deal 10 damage.
+1|QuestingAdventurer|3|2|2|neutral|rare|Questing Adventurer|Whenever you play a card, gain +1/+1.
+1|RagingWorgen|3|3|3|neutral|common|Raging Worgen|Enrage: Windfury and +1 Attack
+1|RagnarostheFirelord|8|8|8|neutral|legendary|Ragnaros the Firelord|Can't Attack. At the end of your turn, deal 8 damage to a random enemy.
+1|RaidLeader|3|2|2|neutral|basic|Raid Leader|You other minions have +1 Attack.
+2|Rampage|2|0|0|warrior|common|Rampage|Give a damaged minion +3/+3.
+1|RavenholdtAssassin|7|7|5|neutral|rare|Ravenholdt Assassin|Stealth
+1|RazorfenHunter|3|2|3|neutral|common|Razorfen Hunter|Battlecry: Summon a 1/1 Boar.
+1|RecklessRocketeer|6|5|2|neutral|basic|Reckless Rocketeer|Charge
+2|Redemption|1|0|0|paladin|common|Redemption|Secret: When one of your minions dies, return it to life with 1 Health.
+2|Repentance|1|0|0|paladin|common|Repentance|Secret: When your opponent plays a minion, reduce its Health to 1.
+1|RiverCrocolisk|2|2|3|neutral|basic|River Crocolisk|
+1|RiverpawGnoll|1|2|1|neutral|common|Riverpaw Gnoll|
+2|RockbiterWeapon|1|0|0|shaman|basic|Rockbiter Weapon|Give a friendly character +3 Attack this turn.
+2|RoguesDoIt...|4|0|0|neutral|basic|Rogues Do It...|Deal 4 damage. Draw a card.
+2|SacrificialPact|0|0|0|warlock|common|Sacrificial Pact|Destroy a Demon. Restore 5 Health to your hero.
+2|Sap|2|0|0|rogue|basic|Sap|Return an enemy minion to its owner's hand
+2|SavageRoar|3|0|0|druid|common|Savage Roar|Give your characters +2 Attack this turn.
+2|Savagery|1|0|0|druid|rare|Savagery|Deal damage equal to your hero's attack to an enemy minion.
+1|SavannahHighmane|6|6|5|hunter|rare|Savannah Highmane|Deathrattle: Summon two 2/2 Hyenas.
+1|ScarletCrusader|3|3|1|neutral|common|Scarlet Crusader|Divine Shield
+1|ScavengingHyena|2|2|2|hunter|common|Scavenging Hyena|Whenever your Beast dies, gain +2/+1.
+1|SeaGiant|10|8|8|neutral|epic|Sea Giant|Costs (1) less for each other minion on the battlefield.
+1|Secretkeeper|1|1|1|neutral|rare|Secretkeeper|Whenever a Secret is played, gain +1/+1.
+1|SenjinShieldmasta|4|3|5|neutral|basic|Sen'jin Shieldmasta|Taunt
+2|SenseDemons|3|0|0|warlock|common|Sense Demons|Put 2 random Demons from your deck into your hand.
+1|ShadoPanMonk|2|2|2|neutral|common|Shado-Pan Monk|
+2|ShadowBolt|3|0|0|warlock|basic|Shadow Bolt|Deal 4 damage to a minion.
+2|ShadowMadness|4|0|0|priest|rare|Shadow Madness|Gain control of an enemy minion with 3 or less Attack until end of turn.
+2|ShadowWordDeath|3|0|0|priest|common|Shadow Word: Death|Destroy a minion with an attack of 5 or more
+2|ShadowWordPain|2|0|0|priest|basic|Shadow Word: Pain|Destroy a minion with 3 or less Attack
+2|Shadowflame|4|0|0|warlock|rare|Shadowflame|Destroy a friendly minion and deal its Attack damage to all enemy minions.
+2|Shadowform|3|0|0|priest|epic|Shadowform|Your Hero Power becomes 'Deal 2 damage'. If already in Shadowform: 3 damage.
+2|Shadowstep|0|0|0|rogue|common|Shadowstep|Return a friendly minion to your hand. It costs (2) less.
+1|ShatteredSunCleric|3|3|2|neutral|common|Shattered Sun Cleric|Battlecry: Give a friendly minion +1/+1.
+2|ShieldBlock|3|0|0|warrior|common|Shield Block|Gain 5 Armor. Draw a card.
+2|ShieldSlam|1|0|0|warrior|epic|Shield Slam|Deal 1 damage to a minion for each Armor you have.
+1|Shieldbearer|1|0|4|neutral|common|Shieldbearer|Taunt.
+2|Shiv|2|0|0|rogue|common|Shiv|Deal 1 damage. Draw a card.
+1|SI7Agent|3|3|3|rogue|rare|SI:7 Agent|Combo: Deal 2 damage.
+2|Silence|0|0|0|priest|common|Silence|Silence a minion.
+1|SilverHandKnight|5|4|4|neutral|common|Silver Hand Knight|Battlecry: Summon a 2/2 Squire.
+1|SilverbackPatriarch|3|1|4|neutral|common|Silverback Patriarch|Taunt
+1|SilvermoonGuardian|4|3|3|neutral|common|Silvermoon Guardian|Divine Shield
+2|SinisterStrike|1|0|0|rogue|basic|Sinister Strike|Deal 3 damage to the enemy hero.
+2|SiphonSoul|6|0|0|warlock|rare|Siphon Soul|Destroy a minion. Restore 3 Health to your hero.
+2|Slam|2|0|0|warrior|common|Slam|Deal 2 damage to a minion. If it survises, draw a card.
+2|SnakeTrap|2|0|0|hunter|epic|Snake Trap|Secret: When one of your minions is attacked, summon three 1/1 Snakes.
+2|Snipe|2|0|0|hunter|common|Snipe|Secret: When your opponent plays a minion, deal 4 damage to it.
+1|SorcerersApprentice|2|3|2|mage|common|Sorcerer's Apprentice|Your spells cost (1) less.
+2|SoulOfTheForest|4|0|0|druid|common|Soul of the Forest|Give your minions Deathrattle: Summon a 2/2 Treant.
+2|Soulfire|0|0|0|warlock|common|Soulfire|Deal 4 damage. Discard a random card.
+1|SouthseaCaptain|3|3|3|neutral|epic|Southsea Captain|Your other Pirates have +1/+1.
+1|SouthseaDeckhand|1|2|1|neutral|common|Southsea Deckhand|Has Charge while you have a weapon equipped.
+2|Spellbender|3|0|0|mage|epic|Spellbender|Secret: When an enemy casts a spell on a minion, summon a 1/3 as the new target.
+1|Spellbreaker|4|4|3|neutral|common|Spellbreaker|Battlecry: Silence a minion.
+1|SpiritWolf|2|2|3|shaman|rare|Spirit Wolf|Taunt
+1|SpitefulSmith|5|4|6|neutral|common|Spiteful Smith|Enrage: Your weapon has +2 Attack.
+2|Sprint|7|0|0|rogue|common|Sprint|Draw 4 cards.
+1|StampedingKodo|5|3|5|neutral|rare|Stampeding Kodo|Battlecry: Destroy a random enemy minion with 2 or less Attack.
+2|Starfall|5|0|0|druid|rare|Starfall|Choose One - Deal 5 damage to an enemy minion; or 2 damage to all of them.
+2|Starfire|6|0|0|druid|common|Starfire|Deal 5 damage. Draw a card.
+1|StarvingBuzzard|2|2|1|hunter|common|Starving Buzzard|Whenever you play a Beast, draw a card
+2|Stomp|2|0|0|neutral|common|Stomp|Deal 2 damage to all enemies.
+1|StonetuskBoar|1|1|1|neutral|basic|Stonetusk Boar|Charge
+3|StormforgedAxe|2|2|3|shaman|common|Stormforged Axe|Overload: (1)
+1|StormpikeCommando|5|4|2|neutral|common|Stormpike Commando|Battlecry: Deal 2 damage.
+1|StormwindChampion|7|6|6|neutral|common|Stormwind Champion|Your other minions have +1/+1.
+1|StormwindKnight|4|2|5|neutral|common|Stormwind Knight|Charge
+1|StranglethornTiger|5|5|5|neutral|common|Stranglethorn Tiger|Stealth
+1|Succubus|2|4|3|warlock|basic|Succubus|Battlecry: Discard a random card.
+1|SummoningPortal|4|0|4|warlock|common|Summoning Portal|Your minions cost (2) less, but not less than (1).
+1|SunfuryProtector|2|2|3|neutral|rare|Sunfury Protector|Battlecry: adjacent minions gain Taunt.
+1|Sunwalker|6|4|5|neutral|rare|Sunwalker|Taunt. Divine Shield
+2|Swipe|4|0|0|druid|common|Swipe|Deal 4 damage to an enemy and 1 damage to all other enemies.
+3|SwordOfJustice|3|1|5|paladin|epic|Sword of Justice|Whenever you summon a minion, give it +1/+1 and this loses 1 durability.
+1|SylvanasWindrunner|6|5|5|neutral|legendary|Sylvanas Windrunner|Deathrattle: Take control of a random enemy minion.
+1|TaurenWarrior|3|2|3|neutral|common|Tauren Warrior|Taunt. Enrage: +3 Attack
+1|TempleEnforcer|6|6|6|priest|common|Temple Enforcer|Battlecry: Give a friendly minion +3 Health.
+1|TheBeast|6|9|7|neutral|legendary|The Beast|Deathrattle: Summon a 3/3 Finkle Einhorm for your opponent.
+1|TheBlackKnight|6|4|5|neutral|legendary|The Black Knight|Battlecry: Destroy a minion with Taunt.
+2|TheCoin|0|0|0|neutral|basic|The Coin|Gain 1 Mana Crystal this turn only.
+2|Thoughtsteal|3|0|0|priest|common|Thoughtsteal|Copy 2 cards from your opponents deck and put them into your hand.
+1|ThrallmarFarseer|3|2|3|neutral|common|Thrallmar Farseer|Windfury
+1|TimberWolf|1|1|1|hunter|basic|Timber Wolf|Your other Beasts have +1 attack
+1|TinkmasterOverspark|3|2|2|neutral|legendary|Tinkmaster Overspark|Battlecry: Transform a minion into a 5/5 Devilsaur or a 1/1 Squirrel at random.
+1|TirionFordring|8|6|6|paladin|legendary|Tirion Fordring|Divine Shield. Taunt. Deathrattle: Equip a 5/3 Ashbringer.
+2|TotemicMight|0|0|0|shaman|common|Totemic Might|Give your Totems +2 Health.
+2|Tracking|1|0|0|hunter|basic|Tracking|Look at the top three cards of your deck. Draw one and discard the others
+2|Transcendence|1|0|0|neutral|common|Transcendence|Until you kill Cho's minions, he can't be attacked.
+3|TruesilverChampion|4|4|2|paladin|common|Truesilver Champion|When your hero attacks, restore 2 Health to it.
+1|TundraRhino|5|2|5|neutral|common|Tundra Rhino|Your Beasts have Charge
+1|TwilightDrake|4|4|1|neutral|rare|Twilight Drake|Battlecry: Gain +1 health for each card in your hand.
+2|TwistingNether|8|0|0|warlock|epic|Twisting Nether|Destroy all minions.
+1|UnboundElemental|3|2|4|shaman|common|Unbound Elemental|Whenever you play a card with Overload, gain +1/+1.
+2|UnleashTheHounds|2|0|0|hunter|common|Unleash the Hounds|For each enemy minion, summon a 1/1 Hound with Charge
+2|Upgrade|1|0|0|warrior|rare|Upgrade!|If you have a weapon, give it +1/+1. Otherwise equip a 1/3 weapon.
+2|Vanish|6|0|0|rogue|common|Vanish|Return all minions to their owner's hand.
+2|Vaporize|3|0|0|mage|rare|Vaporize|Secret: When a minion attacks your hero, destroy it.
+1|VentureCoMercenary|5|7|6|neutral|common|Venture Co. Mercenary|Your minions cost (3) more.
+1|VioletTeacher|4|3|5|neutral|rare|Violet Teacher|Whenever you cast a spell, summon a 1/1 Violet Apprentice.
+1|VoidTerror|3|3|3|warlock|rare|Void Terror|Battlecry: Destroy the minions on either side of this minion and gain their Attack and Health
+1|Voidwalker|1|1|3|warlock|basic|Voidwalker|Taunt.
+1|VoodooDoctor|1|2|1|neutral|basic|Voodoo Doctor|Battlecry: Restore 2 Health.
+1|WarGolem|7|7|7|neutral|common|War Golem|
+1|WarsongCommander|3|2|3|warrior|basic|Warsong Commander|Whenever you play a minion with 3 or less Attack, give it Charge.
+1|WaterElemental|4|3|6|mage|common|Water Elemental|Freeze any character that Water Elemental damages.
+2|Whirlwind|1|0|0|warrior|common|Whirlwind|Deal 1 damage to ALL minions.
+3|WickedKnife|1|1|2|rogue|basic|Wicked Knife|
+2|WildGrowth|2|0|0|druid|basic|Wild Growth|Gain an empty Mana Crystal.
+1|WildPyromancer|2|3|2|neutral|rare|Wild Pyromancer|After you cast a spell, deal 1 damage to ALL minions.
+2|WillofMukla|3|0|0|neutral|common|Will of Mukla|Restore 8 Health.
+2|Windfury|2|0|0|shaman|basic|Windfury|Give a minion Windfury.
+1|WindfuryHarpy|6|4|5|neutral|common|Windfury Harpy|Windfury
+1|Windspeaker|4|3|3|shaman|common|Windspeaker|Battlecry: Give a friendly minion Windfury.
+1|Wisp|0|1|1|neutral|common|Wisp|
+1|Wolfrider|3|3|1|neutral|basic|Wolfrider|Charge
+1|WorgenInfiltrator|1|2|1|neutral|common|Worgen Infiltrator|Stealth
+1|WorthlessImp|1|1|1|warlock|common|Worthless Imp|You are out of demons! At least there are always imps...
+2|Wrath|2|0|0|druid|common|Wrath|Choose One - Deal 3 damage to a minion; or Deal 1 damage and draw a card.
+1|YoungDragonhawk|1|1|1|neutral|common|Young Dragonhawk|Windfury
+1|YoungPriestess|1|2|1|neutral|rare|Young Priestess|At the end of your turn, give another random friendly minion +1 Health.
+1|YouthfulBrewmaster|2|3|2|neutral|common|Youthful Brewmaster|Battlecry: Return a friendly minion from the battlefield to your hand.
+1|Ysera|9|4|12|neutral|legendary|Ysera|At the end of your turn, draw a Dream Card.
+2|YseraAwakens|2|0|0|neutral|basic|Ysera Awakens|Deal 5 damage to all characters except Ysera.

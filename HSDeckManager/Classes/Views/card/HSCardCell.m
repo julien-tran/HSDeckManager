@@ -33,7 +33,7 @@
 - (void)updateUIWithCard:(HSCard*)card
 {
     HSCardInfo *info = card.cardInfo;
-    self.nameLabel.text = info.name;
+    self.nameLabel.text = info.fullname;
     self.manaCostLabel.text = [NSString stringWithFormat:@"%d", info.manaCost.intValue];
 }
 

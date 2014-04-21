@@ -30,8 +30,10 @@
 @property (nonatomic, retain) NSNumber * attack;
 @property (nonatomic, retain) NSNumber * healthDurability;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * fullname;
 @property (nonatomic, retain) NSString * textDescription;
 @property (nonatomic, retain) NSSet *cards;
+@property (nonatomic, retain) NSString * rarity;
 @end
 
 @interface HSCardInfo (CoreDataGeneratedAccessors)

@@ -7,6 +7,7 @@
 //
 
 #import "HSCardSearchViewController.h"
+#import "HSCardSelectionViewController.h"
 
 // View
 #import "iCarousel.h"
@@ -42,14 +43,33 @@
     self.cardCarousel.type = iCarouselTypeRotary;
     [self reloadSearchData];
     [self.searchBar becomeFirstResponder];
+    
+    if (self.card.cardInfo.name.length > 0) {
+        // Get card from name
+        self.searchBar.text = self.card.cardInfo.fullname;
+        /*
+         int index = [self.matchedResults indexOfObject:self.card];
+        // Scroll to card
+        if (index > 0)
+            index = index - 1;
+        else
+            index = self.matchedResults.count;
+        
+        [self.cardCarousel scrollToItemAtIndex:index animated:YES];
+         */
+        [self reloadSearchData];
+    }
 }
 
 - (void)reloadSearchData
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:[NSEntityDescription entityForName:NSStringFromClass([HSCardInfo class]) inManagedObjectContext:mainDataCenter.managedObjectContext]];
+    // Delete space from text
+    NSString *key = [self.searchBar.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
     if (0 < self.searchBar.text.length)
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@", self.searchBar.text]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@", key]];
 
     NSSortDescriptor *nameSort = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     [fetchRequest setSortDescriptors:@[nameSort]];
@@ -110,8 +130,13 @@
         HSCard *newCard = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSCard class]) inManagedObjectContext:mainDataCenter.managedObjectContext];
         newCard.cardInfo = selectedCardInfo;
         [self.deck addCardsObject:newCard];
-        
         [self doneButtonDidClick:nil];
+        
+        // Call fatherview
+        HSCardSelectionViewController *fatherVc = (HSCardSelectionViewController *)[(UITabBarController *)[(UINavigationController *)self.presentingViewController topViewController] selectedViewController];
+        if (fatherVc && [(HSCardSelectionViewController *)fatherVc respondsToSelector:@selector(foundCard:)]) {
+            [(HSCardSelectionViewController *)fatherVc foundCard:newCard];
+        }
     }
 }
 
@@ -149,6 +174,27 @@
             return value;
     }
 }
+
+#pragma mark - Private method
+- (NSUInteger) indexOfCard:(NSString *)cardName
+{
+    /*
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:NSStringFromClass([HSCardInfo class]) inManagedObjectContext:mainDataCenter.managedObjectContext]];
+    // Delete space from text
+    NSString *key = [self.searchBar.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    if (0 < self.searchBar.text.length)
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@", key]];
+    
+    NSSortDescriptor *nameSort = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    [fetchRequest setSortDescriptors:@[nameSort]];
+    
+    self.matchedResults = [mainDataCenter.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+     */
+    return 1;
+}
+
 
 #pragma mark - UISearchBarDelegate
 - (void)searchBar:(UISearchBar*)searchBar textDidChange:(NSString*)searchText
