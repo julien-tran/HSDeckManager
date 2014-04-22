@@ -34,6 +34,8 @@
 @property (nonatomic, retain) NSString * textDescription;
 @property (nonatomic, retain) NSSet *cards;
 @property (nonatomic, retain) NSString * rarity;
+@property (nonatomic, retain) NSString * classCard;
+
 @end
 
 @interface HSCardInfo (CoreDataGeneratedAccessors)

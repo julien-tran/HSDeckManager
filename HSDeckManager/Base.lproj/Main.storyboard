@@ -156,6 +156,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="QMo-MA-zFc"/>
+                    <connections>
+                        <outletCollection property="classHeroButtons" destination="GO6-Lc-Jht" id="8hI-qX-UOG"/>
+                        <outletCollection property="classHeroButtons" destination="TVd-WS-WM7" id="iB5-Rc-DnP"/>
+                        <outletCollection property="classHeroButtons" destination="buI-fh-gcS" id="cl2-jz-kOP"/>
+                        <outletCollection property="classHeroButtons" destination="NAv-yK-Uoe" id="y86-38-spL"/>
+                        <outletCollection property="classHeroButtons" destination="qQg-aM-PJ4" id="X5d-RK-Mf2"/>
+                        <outletCollection property="classHeroButtons" destination="M9x-hX-KQF" id="R15-wf-BLd"/>
+                        <outletCollection property="classHeroButtons" destination="M1w-84-dXA" id="r4L-jB-YRw"/>
+                        <outletCollection property="classHeroButtons" destination="Jwk-94-bt6" id="yoo-h9-5CW"/>
+                        <outletCollection property="classHeroButtons" destination="SeF-k9-wso" id="bjj-ZL-dKU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1Y-lT-kkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

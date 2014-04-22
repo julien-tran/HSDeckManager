@@ -14,6 +14,7 @@
 
 @interface HSHeroSelectionViewController ()
 @property (nonatomic, strong) HSDeck *selectedDeck;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *classHeroButtons;
 @end
 
 @implementation HSHeroSelectionViewController
@@ -46,6 +47,7 @@
     HSDeck *newDeck = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSDeck class]) inManagedObjectContext:mainDataCenter.managedObjectContext];
     newDeck.lastDate = [NSDate date];
     newDeck.name = @"New deck";
+    newDeck.hero = [[HSDataCenter heroIDList] objectAtIndex:[self.classHeroButtons indexOfObject:sender]];
     
     self.selectedDeck = newDeck;
     

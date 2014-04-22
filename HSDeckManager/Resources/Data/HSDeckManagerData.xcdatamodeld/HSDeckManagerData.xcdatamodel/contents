@@ -9,6 +9,7 @@
         <attribute name="canDrawCard" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="canHeal" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="canSilence" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="classCard" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasBattlecry" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasCharge" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -34,8 +35,8 @@
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HSCard" inverseName="parentDeck" inverseEntity="HSCard" syncable="YES"/>
     </entity>
     <elements>
-        <element name="HSCard" positionX="-63" positionY="108" width="128" height="73"/>
-        <element name="HSCardInfo" positionX="-533" positionY="-45" width="128" height="343"/>
+        <element name="HSCard" positionX="-216" positionY="45" width="128" height="73"/>
+        <element name="HSCardInfo" positionX="-99" positionY="-360" width="128" height="373"/>
         <element name="HSDeck" positionX="97" positionY="-45" width="128" height="103"/>
     </elements>
 </model>

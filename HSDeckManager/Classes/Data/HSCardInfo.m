@@ -31,5 +31,6 @@
 @dynamic textDescription;
 @dynamic rarity;
 @dynamic fullname;
+@dynamic classCard;
 
 @end

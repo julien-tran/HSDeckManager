@@ -35,7 +35,7 @@ typedef enum
 
 + (NSArray*)heroIDList
 {
-    return @[@"druid", @"hunter", @"mage", @"priest"];
+    return @[@"druid", @"hunter", @"mage", @"paladin", @"priest", @"rogue", @"shaman", @"warlock", @"warrior"];
 }
 
 - (instancetype)init
@@ -166,8 +166,11 @@ typedef enum
         info.manaCost           = @([components[2] intValue]);
         info.attack             = @([components[3] intValue]);
         info.healthDurability   = @([components[4] intValue]);
+        
+        info.classCard = components[5];
         info.rarity    = components[6];
         info.fullname  = components[7];
+        
         if (components.count > 8)        info.textDescription  = components[8];
     }
     
@@ -175,6 +178,11 @@ typedef enum
     
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hsCardInfoDidLoad"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)loadRateInfo
+{
+
 }
 
 @end

@@ -71,8 +71,11 @@
     key = [key stringByReplacingOccurrencesOfString:@"'" withString:@""];
 
     
-    if (0 < key.length)
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@", key]];
+    if (0 < key.length) {
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@ AND (classCard == %@ OR classCard == %@)", key, self.deck.hero, @"neutral"]];
+    }else {
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"classCard == %@ OR classCard == %@", self.deck.hero, @"neutral"]];
+    }
 
     NSSortDescriptor *nameSort = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     [fetchRequest setSortDescriptors:@[nameSort]];
