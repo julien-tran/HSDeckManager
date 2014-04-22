@@ -68,18 +68,24 @@
                                 <state key="normal" backgroundImage="hero_avatar_druid.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="TD5-QP-cGO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVd-WS-WM7">
                                 <rect key="frame" x="110" y="95" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_hunter.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="mFo-g9-POZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buI-fh-gcS">
                                 <rect key="frame" x="215" y="95" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_mage.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -89,16 +95,22 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAv-yK-Uoe">
                                 <rect key="frame" x="5" y="244" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_paladin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="5aF-67-47G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQg-aM-PJ4">
                                 <rect key="frame" x="110" y="244" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_priest.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="Tm1-cJ-BJf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-hX-KQF">
                                 <rect key="frame" x="215" y="244" width="100" height="119"/>
@@ -106,27 +118,39 @@
                                 <state key="normal" backgroundImage="hero_avatar_druid.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="JVV-Fp-Z0F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1w-84-dXA">
                                 <rect key="frame" x="5" y="397" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_shaman.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="t0G-nP-4dg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwk-94-bt6">
                                 <rect key="frame" x="110" y="397" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_warlock.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="Yhp-ea-GOC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeF-k9-wso">
                                 <rect key="frame" x="215" y="397" width="100" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hero_avatar_druid.png">
+                                <state key="normal" backgroundImage="hero_avatar_warrior.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wuK-ED-TXT" kind="push" id="D8B-3Q-tQ1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -207,19 +231,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOj-hB-OMj">
-                                <rect key="frame" x="26" y="154" width="53" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cardDidClick:" destination="83B-TY-3Cw" eventType="touchUpInside" id="nOj-6b-In8"/>
-                                    <segue destination="SV1-GM-LUS" kind="modal" id="OEm-cr-SO6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1W-D7-Yz6">
-                                <rect key="frame" x="112" y="111" width="90" height="99"/>
+                                <rect key="frame" x="110" y="81" width="100" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,46 +242,96 @@
                                     <segue destination="SV1-GM-LUS" kind="modal" id="LTg-zO-ypH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wab-7z-ZQK">
-                                <rect key="frame" x="227" y="154" width="48" height="33"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-a3-Ufr">
+                                <rect key="frame" x="110" y="250" width="100" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="lip-wW-n2q">
+                                <rect key="frame" x="220" y="250" width="100" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="xYZ-5S-6kX">
+                                <rect key="frame" x="0.0" y="250" width="100" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAr-j9-b5j">
+                                <rect key="frame" x="0.0" y="81" width="100" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="cardDidClick:" destination="83B-TY-3Cw" eventType="touchUpInside" id="ReL-cs-Qa5"/>
-                                    <segue destination="SV1-GM-LUS" kind="modal" id="6XT-CU-D9N"/>
+                                    <action selector="cardDidClick:" destination="83B-TY-3Cw" eventType="touchUpInside" id="4jS-LU-rn8"/>
+                                    <segue destination="SV1-GM-LUS" kind="modal" id="QgU-X8-NE1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="90" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-a3-Ufr">
-                                <rect key="frame" x="112" y="264" width="90" height="57"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAI-ls-2mY">
+                                <rect key="frame" x="216" y="81" width="100" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="90" translatesAutoresizingMaskIntoConstraints="NO" id="lip-wW-n2q">
-                                <rect key="frame" x="210" y="264" width="90" height="57"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cardDidClick:" destination="83B-TY-3Cw" eventType="touchUpInside" id="UJ9-cW-S7E"/>
+                                    <segue destination="SV1-GM-LUS" kind="modal" id="0yE-7K-aD8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igA-4G-KCH">
+                                <rect key="frame" x="39" y="221" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="84" translatesAutoresizingMaskIntoConstraints="NO" id="xYZ-5S-6kX">
-                                <rect key="frame" x="20" y="264" width="84" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cardDidChoosen:" destination="83B-TY-3Cw" eventType="touchUpInside" id="ZPE-cM-cwk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVj-gv-S5L">
+                                <rect key="frame" x="149" y="221" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cardDidChoosen:" destination="83B-TY-3Cw" eventType="touchUpInside" id="ryB-x3-nop"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijx-xY-uos">
+                                <rect key="frame" x="255" y="221" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cardDidChoosen:" destination="83B-TY-3Cw" eventType="touchUpInside" id="bPN-RC-iKh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Card" id="CTO-DE-Qp8"/>
                     <connections>
-                        <outlet property="cardOneLabel" destination="xYZ-5S-6kX" id="oz1-R1-nYg"/>
-                        <outlet property="cardThreeLabel" destination="lip-wW-n2q" id="6Ho-xn-pEB"/>
-                        <outlet property="cardTwoLabel" destination="JEe-a3-Ufr" id="kzN-ti-kI7"/>
+                        <outletCollection property="selectionCardButtons" destination="BAr-j9-b5j" id="qyB-Tk-caf"/>
+                        <outletCollection property="selectionCardButtons" destination="P1W-D7-Yz6" id="Pkr-dJ-xZc"/>
+                        <outletCollection property="selectionCardButtons" destination="PAI-ls-2mY" id="F2m-wj-8dd"/>
+                        <outletCollection property="infoCardLabels" destination="xYZ-5S-6kX" id="qFr-NK-zgL"/>
+                        <outletCollection property="infoCardLabels" destination="JEe-a3-Ufr" id="knd-bh-dKb"/>
+                        <outletCollection property="infoCardLabels" destination="lip-wW-n2q" id="T3k-FG-yyS"/>
+                        <outletCollection property="addDeckCardButton" destination="igA-4G-KCH" id="AqH-bn-WXK"/>
+                        <outletCollection property="addDeckCardButton" destination="UVj-gv-S5L" id="9Gl-YR-0Hx"/>
+                        <outletCollection property="addDeckCardButton" destination="ijx-xY-uos" id="Fpa-XL-ffO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQx-WO-dgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -368,6 +431,13 @@
     </scenes>
     <resources>
         <image name="hero_avatar_druid.png" width="104" height="119"/>
+        <image name="hero_avatar_hunter.png" width="104" height="119"/>
+        <image name="hero_avatar_mage.png" width="104" height="119"/>
+        <image name="hero_avatar_paladin.png" width="125" height="143"/>
+        <image name="hero_avatar_priest.png" width="104" height="119"/>
+        <image name="hero_avatar_shaman.png" width="125" height="143"/>
+        <image name="hero_avatar_warlock.png" width="125" height="143"/>
+        <image name="hero_avatar_warrior.png" width="125" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -375,6 +445,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="OEm-cr-SO6"/>
+        <segue reference="t0G-nP-4dg"/>
+        <segue reference="QgU-X8-NE1"/>
     </inferredMetricsTieBreakers>
 </document>

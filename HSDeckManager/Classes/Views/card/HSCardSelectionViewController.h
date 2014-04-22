@@ -14,9 +14,9 @@
 @interface HSCardSelectionViewController : UIViewController
 @property (nonatomic, strong) HSDeck *deck;
 @property (nonatomic, strong) HSCard *selectedCard;
-@property (weak, nonatomic) IBOutlet UILabel *cardOneLabel;
-@property (weak, nonatomic) IBOutlet UILabel *cardTwoLabel;
-@property (weak, nonatomic) IBOutlet UILabel *cardThreeLabel;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *selectionCardButtons;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *infoCardLabels;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *addDeckCardButton;
 
 - (void)foundCard:(HSCard *)aCard;
 

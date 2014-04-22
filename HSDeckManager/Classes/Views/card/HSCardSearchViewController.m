@@ -67,8 +67,11 @@
     [fetchRequest setEntity:[NSEntityDescription entityForName:NSStringFromClass([HSCardInfo class]) inManagedObjectContext:mainDataCenter.managedObjectContext]];
     // Delete space from text
     NSString *key = [self.searchBar.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    key = [key stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    key = [key stringByReplacingOccurrencesOfString:@"'" withString:@""];
+
     
-    if (0 < self.searchBar.text.length)
+    if (0 < key.length)
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@", key]];
 
     NSSortDescriptor *nameSort = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
@@ -129,7 +132,7 @@
         
         HSCard *newCard = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSCard class]) inManagedObjectContext:mainDataCenter.managedObjectContext];
         newCard.cardInfo = selectedCardInfo;
-        [self.deck addCardsObject:newCard];
+        //[self.deck addCardsObject:newCard];
         [self doneButtonDidClick:nil];
         
         // Call fatherview

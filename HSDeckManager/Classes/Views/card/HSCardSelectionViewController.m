@@ -7,6 +7,7 @@
 //
 
 #import "HSCardSelectionViewController.h"
+#import "HSCardViewController.h"
 
 // View
 #import "HSCardSearchViewController.h"
@@ -15,6 +16,9 @@
 #import "HSDeck.h"
 #import "HSCardInfo.h"
 #import "HSCard.h"
+
+// Category
+#import "UIImage+HS.h"
 
 @interface HSCardSelectionViewController ()
 
@@ -41,6 +45,7 @@
     if (self.listThreeCards == nil) {
         self.listThreeCards = [NSMutableDictionary dictionary];
     }
+    [self resetViewForCard];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,40 +63,78 @@
     // Pass the selected object to the new view controller.
     HSCardSearchViewController *searchVC = segue.destinationViewController;
     searchVC.deck = self.deck;
-    HSCard *card = (HSCard *)[self.listThreeCards objectForKey:@([(UIButton *)sender tag])];
+    HSCard *card = (HSCard *)[self.listThreeCards objectForKey:@(self.tagButton)];
     if (card !=nil && card.cardInfo.name.length > 0) {
         [searchVC setCard:card];
     }
 }
 
+
+#pragma mark - IBActon
 - (IBAction)cardDidClick:(UIButton*)cardButton
 {
     // Card choosen => New 3 cards
-    self.tagButton = cardButton.tag;
+    self.tagButton = [self.selectionCardButtons indexOfObject:cardButton];
 }
 
+- (IBAction)cardDidChoosen:(id)sender
+{
+    if (self.listThreeCards.allKeys.count == 3){
+        // Get card from key
+        NSInteger index = [self.addDeckCardButton indexOfObject:sender];
+        HSCard *card = [self.listThreeCards objectForKey:@(index)];
+        [self.deck addCardsObject:card];
+        // Reset all info
+        [self.listThreeCards removeAllObjects];
+        [self resetViewForCard];
+    }
+}
+
+
+#pragma mark - Private methods
 - (void)foundCard:(HSCard *)aCard
 {
     if (aCard) {
-        // Check if card already added
         [self.listThreeCards setObject:aCard forKey:@(self.tagButton)];
         // TEST
-        UILabel *aLabel = nil;
-        switch (self.tagButton) {
-            case 1:
-                aLabel = self.cardOneLabel;
-                break;
-            case 2:
-                aLabel = self.cardTwoLabel;
-                break;
-            case 3:
-                aLabel = self.cardThreeLabel;
-                break;
-            default:
-                break;
-        }
+        UILabel *aLabel = [self.infoCardLabels objectAtIndex:self.tagButton];
         aLabel.text = aCard.cardInfo.fullname;
     }
+    
+    // Update image
+    HSCardViewController *hsVC = [[HSCardViewController alloc] init];
+    hsVC.cardInfo = aCard.cardInfo;
+    UIImage *bg = [UIImage imageFromView:hsVC.view];
+    UIButton *button = [self.selectionCardButtons objectAtIndex:self.tagButton];
+    [button setBackgroundImage:bg forState:UIControlStateNormal];
+    [button setTitle:nil forState:UIControlStateNormal];
+    
+    // Show button
+    UIButton *addButton = [self.addDeckCardButton objectAtIndex:self.tagButton];
+    addButton.hidden = NO;
+    // Check if availabe
+    for (UIButton *buttonTmp in self.addDeckCardButton) {
+        buttonTmp.enabled = (self.listThreeCards.allKeys.count == 3);
+    }
 }
+
+- (void)resetViewForCard
+{
+    // Button
+    for (UIButton *button in self.selectionCardButtons) {
+        [button setBackgroundImage:nil forState:UIControlStateNormal];
+        [button setTitle:@"Selection" forState:UIControlStateNormal];
+
+    }
+    // Label
+    for (UILabel *label in self.infoCardLabels) {
+        label.text = nil;
+    }
+    // Button add to deck
+    for (UIButton *button in self.addDeckCardButton) {
+        button.hidden = YES;
+    }
+}
+
 
 @end

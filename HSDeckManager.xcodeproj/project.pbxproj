@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322104241906957E00A75570 /* UIImage+HS.m in Sources */ = {isa = PBXBuildFile; fileRef = 322104231906957E00A75570 /* UIImage+HS.m */; };
+		322104291906AB0700A75570 /* hero_avatar_paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 322104251906AB0700A75570 /* hero_avatar_paladin.png */; };
+		3221042A1906AB0700A75570 /* hero_avatar_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 322104261906AB0700A75570 /* hero_avatar_shaman.png */; };
+		3221042B1906AB0700A75570 /* hero_avatar_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 322104271906AB0700A75570 /* hero_avatar_warlock.png */; };
+		3221042C1906AB0700A75570 /* hero_avatar_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 322104281906AB0700A75570 /* hero_avatar_warrior.png */; };
 		3277313A1905519700EC85EF /* token_legendary.png in Resources */ = {isa = PBXBuildFile; fileRef = 327731391905519700EC85EF /* token_legendary.png */; };
 		32FCEE2519051DF700CF2F7E /* AlAkirTheWindlord.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FCEC6F19051DF500CF2F7E /* AlAkirTheWindlord.png */; };
 		32FCEE2619051DF700CF2F7E /* AldorPeacekeeper.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FCEC7019051DF500CF2F7E /* AldorPeacekeeper.png */; };
@@ -974,6 +979,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322104221906957E00A75570 /* UIImage+HS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+HS.h"; path = "HSDeckManager/Classes/Helpers/UIImage+HS.h"; sourceTree = SOURCE_ROOT; };
+		322104231906957E00A75570 /* UIImage+HS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+HS.m"; path = "HSDeckManager/Classes/Helpers/UIImage+HS.m"; sourceTree = SOURCE_ROOT; };
+		322104251906AB0700A75570 /* hero_avatar_paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_paladin.png; sourceTree = "<group>"; };
+		322104261906AB0700A75570 /* hero_avatar_shaman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_shaman.png; sourceTree = "<group>"; };
+		322104271906AB0700A75570 /* hero_avatar_warlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_warlock.png; sourceTree = "<group>"; };
+		322104281906AB0700A75570 /* hero_avatar_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_warrior.png; sourceTree = "<group>"; };
 		327731391905519700EC85EF /* token_legendary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_legendary.png; sourceTree = "<group>"; };
 		32FCEC6F19051DF500CF2F7E /* AlAkirTheWindlord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlAkirTheWindlord.png; sourceTree = "<group>"; };
 		32FCEC7019051DF500CF2F7E /* AldorPeacekeeper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AldorPeacekeeper.png; sourceTree = "<group>"; };
@@ -2476,6 +2487,8 @@
 		F9376C0B1902D62300FFE097 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				322104221906957E00A75570 /* UIImage+HS.h */,
+				322104231906957E00A75570 /* UIImage+HS.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -3056,6 +3069,10 @@
 		F9E184AC1901521B00BEC2AC /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				322104251906AB0700A75570 /* hero_avatar_paladin.png */,
+				322104261906AB0700A75570 /* hero_avatar_shaman.png */,
+				322104271906AB0700A75570 /* hero_avatar_warlock.png */,
+				322104281906AB0700A75570 /* hero_avatar_warrior.png */,
 				F9E184AD1901521B00BEC2AC /* Banner */,
 				F9E184B71901521B00BEC2AC /* hero_avatar_druid.png */,
 				F9E184B81901521B00BEC2AC /* hero_avatar_hunter.png */,
@@ -3583,6 +3600,7 @@
 				32FCEF8519051DF700CF2F7E /* Slam.png in Resources */,
 				32FCEEF419051DF700CF2F7E /* InnerRage.png in Resources */,
 				32FCEF1519051DF700CF2F7E /* MadBomber.png in Resources */,
+				322104291906AB0700A75570 /* hero_avatar_paladin.png in Resources */,
 				32FCF339190522CB00CF2F7E /* Title_RavenholdtAssassin.png in Resources */,
 				32FCF0FE19051E0800CF2F7E /* Title_CircleOfHealing.png in Resources */,
 				32FCEEB719051DF700CF2F7E /* Flamestrike.png in Resources */,
@@ -3600,6 +3618,7 @@
 				32FCF15D19051E0800CF2F7E /* Title_LightningStorm.png in Resources */,
 				32FCEE6019051DF700CF2F7E /* Brawl.png in Resources */,
 				32FCEE3519051DF700CF2F7E /* ArcaniteReaper.png in Resources */,
+				3221042C1906AB0700A75570 /* hero_avatar_warrior.png in Resources */,
 				32FCF305190522CB00CF2F7E /* Title_IronfurGrizzly.png in Resources */,
 				32FCF13B19051E0800CF2F7E /* Title_HealingTotem.png in Resources */,
 				32FCF10519051E0800CF2F7E /* Title_Consecration.png in Resources */,
@@ -3772,6 +3791,7 @@
 				32FCF335190522CB00CF2F7E /* Title_QuestingAdventurer.png in Resources */,
 				32FCF307190522CB00CF2F7E /* Title_KingMukla.png in Resources */,
 				32FCEFA019051DF700CF2F7E /* StranglethornTiger.png in Resources */,
+				3221042B1906AB0700A75570 /* hero_avatar_warlock.png in Resources */,
 				32FCF10819051E0800CF2F7E /* Title_CruelTaskmaster.png in Resources */,
 				F9376C1C1902D91A00FFE097 /* cardframe_minion.png in Resources */,
 				32FCEE7F19051DF700CF2F7E /* DarkscaleHealer.png in Resources */,
@@ -3954,6 +3974,7 @@
 				32FCEE4A19051DF700CF2F7E /* BearForm.png in Resources */,
 				32FCEFA219051DF700CF2F7E /* SummoningPortal.png in Resources */,
 				32FCEE9D19051DF700CF2F7E /* EliteTaurenChieftain.png in Resources */,
+				3221042A1906AB0700A75570 /* hero_avatar_shaman.png in Resources */,
 				32FCEF1E19051DF700CF2F7E /* MassDispel.png in Resources */,
 				32FCF2E5190522CB00CF2F7E /* Title_FacelessManipulator.png in Resources */,
 				32FCEEE919051DF700CF2F7E /* Hyena.png in Resources */,
@@ -4168,6 +4189,7 @@
 				F9E184A01901369400BEC2AC /* HSAppDelegate.m in Sources */,
 				F9376C051902D08000FFE097 /* HSDeckListViewController.m in Sources */,
 				F9376C101902D62300FFE097 /* iCarousel.m in Sources */,
+				322104241906957E00A75570 /* UIImage+HS.m in Sources */,
 				F9E184E41901549600BEC2AC /* HSDeckManagerData.xcdatamodeld in Sources */,
 				F9376C061902D08000FFE097 /* HSDeckStatsViewController.m in Sources */,
 				F9376C141902D7CE00FFE097 /* HSCardViewController.m in Sources */,
