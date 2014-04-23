@@ -93,6 +93,7 @@
     // Reset all info
     [self.listThreeCards removeAllObjects];
     [self resetViewForCard];
+    //[mainDataCenter saveContext];
 }
 
 

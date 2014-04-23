@@ -9,6 +9,8 @@
 #import "HSDataCenter.h"
 #import "HSCardInfo.h"
 #import "HSRate.h"
+#import "HSDeck.h"
+#import "HSCard.h"
 
 typedef enum
 {
@@ -141,7 +143,9 @@ typedef enum
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-#pragma mark - Query
+#pragma mark -
+#pragma mark Query
+#pragma mark - Load Info
 - (void)loadCardInfo
 {
     BOOL alreadyLoadInfo = [[NSUserDefaults standardUserDefaults] boolForKey:@"hsCardInfoDidLoad"];
@@ -173,8 +177,48 @@ typedef enum
         info.rarity    = components[6];
         info.fullname  = components[7];
         
-        if (components.count > 8)
-            info.textDescription  = components[8];
+        if (components.count > 8) {
+            NSString *des = components[8];
+            info.textDescription  = des;
+            info.hasOverload = @([des rangeOfString:@"Overload"].location != NSNotFound);
+            info.isTaunt = @([des rangeOfString:@"Taunt"].location != NSNotFound);
+            info.isStealth = @([des rangeOfString:@"Stealth"].location != NSNotFound);
+            info.hasCharge = @([des rangeOfString:@"Charge"].location != NSNotFound && ![info.name isEqualToString:@"WarsongCommander"]);
+            info.isTaunt = @([des rangeOfString:@"Taunt"].location != NSNotFound);
+            info.isSecret = @([des rangeOfString:@"Secret:"].location != NSNotFound);
+            info.hasSilence = @([des rangeOfString:@"Silence"].location != NSNotFound);
+            info.hasEnrage = @([des rangeOfString:@"Enrage"].location != NSNotFound);
+            info.hasBattlecry = @([des rangeOfString:@"Battlecry:"].location != NSNotFound);
+        }
+        
+        // Check AOE
+        if ([info.name isEqualToString:@"ArcaneExplosion"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Whirlwind"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Swipe"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"FanOfKnives"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Hellfire"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"HolyNova"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Flamestrike"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Blizzard"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"FrostNova"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"ExplosiveTrap"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Consecration"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"ConeOfCold"]) {
+            info.isAoE = @(YES);
+        } else if ([info.name isEqualToString:@"Abomination"]) {
+            info.isAoE = @(YES);
+        }
     }
     
     [self saveContext];
@@ -238,6 +282,7 @@ typedef enum
     return res;
 }
 
+#pragma mark - Get Info
 - (NSString *)rateStringFromValue:(float)value
 {
     NSString *res = nil;
@@ -265,6 +310,26 @@ typedef enum
         res = @"Bad";
     } else {
         res = @"Terrible";
+    }
+    
+    return res;
+}
+
+- (NSMutableDictionary *)dictionaryStatsFromDeck:(HSDeck *)aDeck
+{
+    NSMutableDictionary *res = [NSMutableDictionary dictionary];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:NSStringFromClass([HSCard class])
+                                        inManagedObjectContext:self.managedObjectContext]];
+    // Fetch
+    NSArray *keyArray = [NSArray arrayWithObjects:@"isMinion",@"isSpell",@"isSpell",@"isWeapon",@"hasBattlecry",@"hasOverload",@"isTaunt",@"isStealth",@"hasCharge",@"isSecret", @"hasSilence", @"hasEnrage", @"isAoE",nil];
+    
+    NSError *error = nil;
+    for (NSString *key in keyArray) {
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"parentDeck = %@ AND cardInfo.%@ == YES", aDeck, key]];
+        NSUInteger count = [self.managedObjectContext countForFetchRequest:fetchRequest error:&error];
+        [res setObject:@(count) forKey:key];
     }
     
     return res;

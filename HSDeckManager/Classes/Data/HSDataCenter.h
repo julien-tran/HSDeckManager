@@ -15,6 +15,7 @@
 #define COMMON      @"common"
 
 @class HSCardInfo;
+@class HSDeck;
 
 @interface HSDataCenter : NSObject
 
@@ -28,5 +29,6 @@
 
 - (float)rateForCardInfo:(HSCardInfo *)cardInfo withClass:(NSString *)classHero;
 - (NSString *)rateStringFromValue:(float)value;
+- (NSMutableDictionary *)dictionaryStatsFromDeck:(HSDeck *)aDeck;
 
 @end

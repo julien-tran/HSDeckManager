@@ -2,8 +2,8 @@
 //  HSDeckCell.h
 //  HSDeckManager
 //
-//  Created by Julien Tran on 18/04/14.
-//  Copyright (c) 2014 Julien Tran. All rights reserved.
+//  Created by Minh-Hang LE on 23/04/14.
+//  Copyright (c) 2014 Minh-Hang LE. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

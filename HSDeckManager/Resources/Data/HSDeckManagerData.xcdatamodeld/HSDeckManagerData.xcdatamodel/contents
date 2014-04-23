@@ -3,7 +3,6 @@
     <entity name="HSCard" representedClassName="HSCard" syncable="YES">
         <attribute name="rate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <relationship name="cardInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSCardInfo" inverseName="cards" inverseEntity="HSCardInfo" syncable="YES"/>
-        <relationship name="cardRate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSRate" syncable="YES"/>
         <relationship name="parentDeck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSDeck" inverseName="cards" inverseEntity="HSDeck" syncable="YES"/>
     </entity>
     <entity name="HSCardInfo" representedClassName="HSCard" syncable="YES">
@@ -15,6 +14,9 @@
         <attribute name="fullname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasBattlecry" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasCharge" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasEnrage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasOverload" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasSilence" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="healthDurability" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="isAoE" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isDivine" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -22,6 +24,7 @@
         <attribute name="isRemoval" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isSecret" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isSpell" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isStealth" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isTaunt" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isWeapon" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -50,8 +53,8 @@
     </entity>
     <elements>
         <element name="HSCard" positionX="72" positionY="-196" width="128" height="88"/>
-        <element name="HSCardInfo" positionX="-99" positionY="-360" width="128" height="373"/>
+        <element name="HSCardInfo" positionX="-99" positionY="-360" width="128" height="388"/>
         <element name="HSDeck" positionX="97" positionY="-45" width="128" height="103"/>
-        <element name="HSRate" positionX="61" positionY="-430" width="128" height="208"/>
+        <element name="HSRate" positionX="70" positionY="-430" width="128" height="208"/>
     </elements>
 </model>

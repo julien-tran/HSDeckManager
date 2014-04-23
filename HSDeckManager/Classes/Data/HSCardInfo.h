@@ -35,6 +35,11 @@
 @property (nonatomic, retain) NSSet *cards;
 @property (nonatomic, retain) NSString * rarity;
 @property (nonatomic, retain) NSString * classCard;
+@property (nonatomic, retain) NSNumber * hasOverload;
+@property (nonatomic, retain) NSNumber * isStealth;
+@property (nonatomic, retain) NSNumber * hasSilence;
+@property (nonatomic, retain) NSNumber * hasEnrage;
+
 
 @end
 

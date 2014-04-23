@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CPTPlot.h"
 
-@interface HSDeckStatsViewController : UIViewController
+@class HSDeck;
+@class HSStatsCell;
+
+@interface HSDeckStatsViewController : UIViewController<CPTPlotDataSource,UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
+
+@property (nonatomic, strong) HSDeck *deck;
+@property (nonatomic, weak) IBOutlet HSStatsCell     *cardCell;
 
 @end

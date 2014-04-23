@@ -32,5 +32,9 @@
 @dynamic rarity;
 @dynamic fullname;
 @dynamic classCard;
+@dynamic hasOverload;
+@dynamic isStealth;
+@dynamic hasSilence;
+@dynamic hasEnrage;
 
 @end
