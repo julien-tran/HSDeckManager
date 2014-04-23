@@ -15,5 +15,6 @@
 
 @property (nonatomic, retain) HSDeck *parentDeck;
 @property (nonatomic, retain) HSCardInfo *cardInfo;
+@property (nonatomic, retain) NSNumber *rate;
 
 @end

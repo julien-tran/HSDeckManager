@@ -9,6 +9,7 @@
 #import "HSCardCell.h"
 #import "HSCard.h"
 #import "HSCardInfo.h"
+#import "HSDataCenter.h"
 
 @interface HSCardCell ()
 @property (nonatomic, weak) IBOutlet UILabel        *nameLabel;
@@ -35,6 +36,16 @@
     HSCardInfo *info = card.cardInfo;
     self.nameLabel.text = info.fullname;
     self.manaCostLabel.text = [NSString stringWithFormat:@"%d", info.manaCost.intValue];
+    self.cardImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",info.name]];
+    
+    if ([info.rarity isEqualToString:LEGENDARY])
+        self.nameLabel.textColor = [UIColor orangeColor];
+    else if ([info.rarity isEqualToString:EPIC])
+        self.nameLabel.textColor = [UIColor purpleColor];
+    else if ([info.rarity isEqualToString:RARE])
+        self.nameLabel.textColor = [UIColor blueColor];
+    else
+        self.nameLabel.textColor = [UIColor whiteColor];
 }
 
 @end

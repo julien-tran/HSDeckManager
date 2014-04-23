@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+#define LEGENDARY   @"legendary"
+#define EPIC        @"epic"
+#define RARE        @"rare"
+#define COMMON      @"common"
+
+@class HSCardInfo;
+
 @interface HSDataCenter : NSObject
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext          *managedObjectContext;
@@ -17,5 +25,8 @@
 + (instancetype)sharedInstance;
 + (NSArray*)heroIDList;
 - (void)saveContext;
+
+- (float)rateForCardInfo:(HSCardInfo *)cardInfo withClass:(NSString *)classHero;
+- (NSString *)rateStringFromValue:(float)value;
 
 @end

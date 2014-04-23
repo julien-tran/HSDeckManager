@@ -69,7 +69,6 @@
     NSString *key = [self.searchBar.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     key = [key stringByReplacingOccurrencesOfString:@"-" withString:@""];
     key = [key stringByReplacingOccurrencesOfString:@"'" withString:@""];
-
     
     if (0 < key.length) {
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@ AND (classCard == %@ OR classCard == %@)", key, self.deck.hero, @"neutral"]];

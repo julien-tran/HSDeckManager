@@ -8,10 +8,7 @@
 
 #import "HSCardViewController.h"
 #import "HSCardInfo.h"
-
-#define LEGENDARY   @"legendary"
-#define EPIC        @"epic"
-#define COMMON      @"common"
+#import "HSDataCenter.h"
 
 @interface HSCardViewController ()
 

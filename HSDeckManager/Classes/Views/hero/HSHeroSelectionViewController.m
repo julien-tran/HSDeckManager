@@ -48,7 +48,6 @@
     newDeck.lastDate = [NSDate date];
     newDeck.name = @"New deck";
     newDeck.hero = [[HSDataCenter heroIDList] objectAtIndex:[self.classHeroButtons indexOfObject:sender]];
-    
     self.selectedDeck = newDeck;
     
     // Get the new view controller using [segue destinationViewController].

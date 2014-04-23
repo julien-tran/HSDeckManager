@@ -13,6 +13,7 @@
 #import "HSCardSearchViewController.h"
 
 // Data
+#import "HSDataCenter.h"
 #import "HSDeck.h"
 #import "HSCardInfo.h"
 #import "HSCard.h"
@@ -48,6 +49,12 @@
     [self resetViewForCard];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -79,15 +86,13 @@
 
 - (IBAction)cardDidChoosen:(id)sender
 {
-    if (self.listThreeCards.allKeys.count == 3){
-        // Get card from key
-        NSInteger index = [self.addDeckCardButton indexOfObject:sender];
-        HSCard *card = [self.listThreeCards objectForKey:@(index)];
-        [self.deck addCardsObject:card];
-        // Reset all info
-        [self.listThreeCards removeAllObjects];
-        [self resetViewForCard];
-    }
+    // Get card from key
+    NSInteger index = [self.addDeckCardButton indexOfObject:sender];
+    HSCard *card = [self.listThreeCards objectForKey:@(index)];
+    [self.deck addCardsObject:card];
+    // Reset all info
+    [self.listThreeCards removeAllObjects];
+    [self resetViewForCard];
 }
 
 
@@ -96,11 +101,15 @@
 {
     if (aCard) {
         [self.listThreeCards setObject:aCard forKey:@(self.tagButton)];
-        // TEST
+        // Update rate for card and show it
+        float rate = [mainDataCenter rateForCardInfo:aCard.cardInfo withClass:self.deck.hero];
+        aCard.rate = @(rate);
+        // Rate
         UILabel *aLabel = [self.infoCardLabels objectAtIndex:self.tagButton];
-        aLabel.text = aCard.cardInfo.fullname;
+        NSString *valueStr = [mainDataCenter rateStringFromValue:[aCard.rate floatValue]];
+        NSString *text = [NSString stringWithFormat:@"Value: %@ \n\n %@",aCard.rate,valueStr];
+        aLabel.text = text;
     }
-    
     // Update image
     HSCardViewController *hsVC = [[HSCardViewController alloc] init];
     hsVC.cardInfo = aCard.cardInfo;
@@ -108,14 +117,9 @@
     UIButton *button = [self.selectionCardButtons objectAtIndex:self.tagButton];
     [button setBackgroundImage:bg forState:UIControlStateNormal];
     [button setTitle:nil forState:UIControlStateNormal];
-    
     // Show button
     UIButton *addButton = [self.addDeckCardButton objectAtIndex:self.tagButton];
     addButton.hidden = NO;
-    // Check if availabe
-    for (UIButton *buttonTmp in self.addDeckCardButton) {
-        buttonTmp.enabled = (self.listThreeCards.allKeys.count == 3);
-    }
 }
 
 - (void)resetViewForCard
@@ -124,7 +128,6 @@
     for (UIButton *button in self.selectionCardButtons) {
         [button setBackgroundImage:nil forState:UIControlStateNormal];
         [button setTitle:@"Selection" forState:UIControlStateNormal];
-
     }
     // Label
     for (UILabel *label in self.infoCardLabels) {

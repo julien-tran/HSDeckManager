@@ -12,5 +12,6 @@
 
 @dynamic parentDeck;
 @dynamic cardInfo;
+@dynamic rate;
 
 @end

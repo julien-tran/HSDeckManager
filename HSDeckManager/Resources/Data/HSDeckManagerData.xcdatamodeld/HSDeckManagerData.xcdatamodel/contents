@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="HSCard" representedClassName="HSCard" syncable="YES">
+        <attribute name="rate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <relationship name="cardInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSCardInfo" inverseName="cards" inverseEntity="HSCardInfo" syncable="YES"/>
+        <relationship name="cardRate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSRate" syncable="YES"/>
         <relationship name="parentDeck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSDeck" inverseName="cards" inverseEntity="HSDeck" syncable="YES"/>
     </entity>
     <entity name="HSCardInfo" representedClassName="HSCard" syncable="YES">
@@ -34,9 +36,22 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HSCard" inverseName="parentDeck" inverseEntity="HSCard" syncable="YES"/>
     </entity>
+    <entity name="HSRate" representedClassName="HSRate" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rateDruid" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateHunter" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateMage" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ratePaladin" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ratePriest" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateRogue" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateShaman" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateWarlock" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateWarrior" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="HSCard" positionX="-216" positionY="45" width="128" height="73"/>
+        <element name="HSCard" positionX="72" positionY="-196" width="128" height="88"/>
         <element name="HSCardInfo" positionX="-99" positionY="-360" width="128" height="373"/>
         <element name="HSDeck" positionX="97" positionY="-45" width="128" height="103"/>
+        <element name="HSRate" positionX="61" positionY="-430" width="128" height="208"/>
     </elements>
 </model>

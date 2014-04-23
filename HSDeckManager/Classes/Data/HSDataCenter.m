@@ -8,6 +8,7 @@
 
 #import "HSDataCenter.h"
 #import "HSCardInfo.h"
+#import "HSRate.h"
 
 typedef enum
 {
@@ -43,6 +44,7 @@ typedef enum
     if (self = [super init])
     {
         [self loadCardInfo];
+        [self loadRateInfo];
     }
     return self;
 }
@@ -171,7 +173,8 @@ typedef enum
         info.rarity    = components[6];
         info.fullname  = components[7];
         
-        if (components.count > 8)        info.textDescription  = components[8];
+        if (components.count > 8)
+            info.textDescription  = components[8];
     }
     
     [self saveContext];
@@ -182,7 +185,90 @@ typedef enum
 
 - (void)loadRateInfo
 {
-
+    BOOL alreadyLoadInfo = [[NSUserDefaults standardUserDefaults] boolForKey:@"hsCardRateDidLoad"];
+    if (alreadyLoadInfo)
+        return;
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"rate" ofType:@"csv"];
+    NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSArray *lines = [fileContent componentsSeparatedByString:@"\n"];
+    for (NSString *line in lines)
+    {
+        NSArray *components = [line componentsSeparatedByString:@","];
+        if (components.count < 8)
+            continue;
+        
+        HSRate *info = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSRate class]) inManagedObjectContext:self.managedObjectContext];
+        
+        info.name               = components[0];
+        info.rateDruid          = @([components[1] floatValue]);
+        info.rateHunter         = @([components[2] floatValue]);
+        info.rateMage           = @([components[3] floatValue]);
+        info.ratePaladin        = @([components[4] floatValue]);
+        info.ratePriest         = @([components[5] floatValue]);
+        info.rateRogue          = @([components[6] floatValue]);
+        info.rateShaman         = @([components[7] floatValue]);
+        info.rateWarlock        = @([components[8] floatValue]);
+        info.rateWarrior        = @([components[9] floatValue]);
+    }
+    
+    [self saveContext];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hsCardRateDidLoad"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
+- (float)rateForCardInfo:(HSCardInfo *)cardInfo withClass:(NSString *)classHero
+{
+    float res = 0.00;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:NSStringFromClass([HSRate class]) inManagedObjectContext:self.managedObjectContext]];
+    // Delete space from text
+    NSString *key = [NSString stringWithFormat:@"rate%@",[classHero capitalizedString]];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name == %@", cardInfo.name]];
+    [fetchRequest setResultType:NSDictionaryResultType];
+    [fetchRequest setPropertiesToFetch:[NSArray arrayWithObjects:key,nil]];
+    
+    NSError *error;
+    NSArray *objects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    if (objects.count > 0)
+        res = [[[objects objectAtIndex:0] objectForKey:key] floatValue];
+
+    return res;
+}
+
+- (NSString *)rateStringFromValue:(float)value
+{
+    NSString *res = nil;
+    
+    // Top 80 - 89, Great 70 - 79, Good 60 69, Usually good 59 - 59.95, Above Average: 50 - 59, Average 40 -49, Below average 30- 49, Usually bad : 20 - 29 Bad 10 19 Terrible 5 9
+    if (value > 90 || value == 90) {
+        res = @"Must have";
+    } else if ((value == 80 || value > 80) && value < 90) {
+        res = @"Top";
+    } else if ((value == 70 || value > 70) && value < 80) {
+        res = @"Great";
+    } else if ((value == 60 || value > 60) && value < 70) {
+        res = @"Good";
+    } else if ( value > 59 && value < 60) {
+        res = @"Usually good";
+    } else if ((value == 50 || value > 50) && (value < 59 || value == 59)) {
+        res = @"Above average";
+    } else if ((value == 40 || value > 40) && value < 50) {
+        res = @"Average";
+    } else if ((value == 30 || value > 30) && value < 40) {
+        res = @"Below average";
+    } else if ((value == 20 || value > 20) && value < 30) {
+        res = @"Not very bad";
+    } else if ((value == 10 || value > 10) && value < 20) {
+        res = @"Bad";
+    } else {
+        res = @"Terrible";
+    }
+    
+    return res;
+}
+
 
 @end
